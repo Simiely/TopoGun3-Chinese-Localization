@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>duplicate.png</file>
+        <file>delete.png</file>
+        <file>licman.png</file>
+    </qresource>
+</RCC>

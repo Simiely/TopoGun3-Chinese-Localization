@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<property name="tangentToNormal" type="bool" value="true"/>
+<property name="bitangentToNormal" type="bool" value="false"/>
+<property name="flipTangent" type="bool" value="false"/>
+<property name="flipBitangent" type="bool" value="false"/>
+<property name="flipNormal" type="bool" value="false"/>
+<property name="flipTangentBitangent" type="bool" value="false"/>
+<property name="split1" type="bool" value="true"/>
+<property name="split2" type="bool" value="false"/>
+<property name="splitLong" type="bool" value="false"/>
+<property name="splitShort" type="bool" value="false"/>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<property name="symmetry" type="bool" value="false"/>
+<property name="showGrid" type="bool" value="true"/>
+<property name="cull" type="bool" value="true"/>
+<property name="smoothShade" type="bool" value="false"/>
+<property name="showNormals" type="bool" value="false"/>
+<property name="seeThrough" type="bool" value="true"/>
+<property name="alphaRender" type="bool" value="true"/>
+<property name="wireframe" type="bool" value="false"/>
+<property name="showBorders" type="bool" value="true"/>
+<property name="steadyMouse" type="bool" value="false"/>
+<property name="wireframeMesh" type="bool" value="true"/>
+<property name="centralVisible" type="bool" value="true"/>
+<property name="meshesHiddenByReference" type="bool" value="true"/>
+<property name="keepToolbarsInFullscreen" type="bool" value="false"/>
+<property name="alwaysShowGuides" type="bool" value="true"/>
+<property name="showKeys" type="bool" value="false"/>
+<property name="backfaceCulling" type="bool" value="true"/>
+

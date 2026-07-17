@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<property name="bakeView" type="bool" value="false" />
+<property name="inspectorView" type="bool" value="true" />
+<property name="sceneView" type="bool" value="true" />
+<property name="toolOptionsView" type="bool" value="true" />
+<property name="symmetryOptionsView" type="bool" value="false" />
+<property name="logView" type="bool" value="false" />
+<property name="historyView" type="bool" value="false" />
+<property name="showToolbar" type="bool" value="true" />
+<property name="showKeys" type="bool" value="false" />

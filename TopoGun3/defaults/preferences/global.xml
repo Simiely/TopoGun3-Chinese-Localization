@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<property name="highlightPointSize" type="float" value="10"/>
+<property name="highlightLineWidth" type="float" value="3"/>
+<property name="backgroundGradColor1" type="color" red="80" green="80" blue="80" alpha="255"/>
+<property name="backgroundGradColor2" type="color" red="140" green="140" blue="140" alpha="255"/>
+<property name="darkBackgroundGradColor1" type="color" red="55" green="55" blue="55" alpha="255"/>
+<property name="darkBackgroundGradColor2" type="color" red="85" green="85" blue="85" alpha="255"/>
+<property name="gridColor" type="color" red="50" green="50" blue="50" alpha="255"/>
+<property name="darkGridColor" type="color" red="90" green="90" blue="90" alpha="255"/>
+<property name="darkMode" type="bool" value="true"/>
+<property name="gradientMode" type="bool" value="true"/>
+<property name="fov" type="int" value="15"/>
+<property name="snapDistance" type="int" value="50"/>
+<property name="lazyRadius" type="float" value="50"/>
+<property name="screenSelectPointSize" type="int" value="100"/>
+<property name="mousePan" type="float" value="15"/>
+<property name="mouseZoom" type="float" value="20"/>
+<property name="mouseRotate" type="float" value="20"/>
+<property name="mouseInteractionModel" type="int" value="0"/>
+<property name="symmetryTolerance" type="int" value="20"/>
+<property name="symmetryZeroSnap" type="int" value="30"/>
+<property name="batchSize" type="int" value="20000"/>
+<property name="maxNumTrianglesPerLeaf" type="int" value="1000"/>
+<property name="updates" type="bool" value="true"/>
+<property name="yUp" type="bool" value="true"/>
+<property name="lightPosition" type="vec3" x="0.0" y="0.15" z="1.0"/>
+<property name="antialiasing" type="bool" value="true"/>
+<property name="workMeshColor" type="color" red="215" green="180" blue="145" alpha="255"/>
+<property name="workMeshWireColor" type="color" red="75" green="50" blue="0" alpha="255"/>
+<property name="workMeshSpecular" type="color" red="30" green="30" blue="30" alpha="200"/>
+<property name="undoLevels" type="int" value="100"/>
+<property name="rememberNotUndoable" type="bool" value="false"/>
+<property name="guideLinesColor" type="color" red="70" green="70" blue="70" alpha="255"/>
+<property name="guideLinesColorNotActive" type="color" red="70" green="55" blue="50" alpha="180"/>
+<property name="guidePointsColor" type="color" red="10" green="10" blue="10" alpha="255"/>
+<property name="guideSelectedPointsColor" type="color" red="255" green="125" blue="0" alpha="255"/>
+<property name="selectedGuideLinesColor" type="color" red="255" green="150" blue="90" alpha="255"/>
+<property name="selectedGuidePointsColor" type="color" red="30" green="30" blue="30" alpha="255"/>
+<property name="loftGuideLinesColor" type="color" red="155" green="200" blue="90" alpha="255"/>
+<property name="guidesPointSize" type="float" value="3"/>
+<property name="guidesSelectedPointSize" type="float" value="8"/>
+<property name="guidesSelectedEndsPointSize" type="float" value="12"/>
+<property name="guidesLineWidth" type="float" value="2"/>
+<property name="guidesSelectedLineWidth" type="float" value="3"/>
+<property name="guideLinesGradientColor1" type="color" red="0" green="125" blue="255" alpha="255"/>
+<property name="guideLinesGradientColor2" type="color" red="0" green="255" blue="125" alpha="255"/>
+<property name="guideLinesLoftColor" type="color" red="255" green="100" blue="255" alpha="255"/>
+<property name="guideLinesSweepColor" type="color" red="255" green="70" blue="70" alpha="255"/>
+<property name="highlightColor" type="color" red="255" green="50" blue="50" alpha="255"/>
+<property name="maximizeOnStart" type="bool" value="true"/>
+<property name="windowWidth" type="int" value="1920"/>
+<property name="windowHeight" type="int" value="1080"/>
+<property name="piemenuRadius" type="int" value="80"/>
+<property name="helperX" type="int" value="100"/>
+<property name="helperY" type="int" value="100"/>
+<property name="staticHelper" type="bool" value="true"/>

@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>347</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>200</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>窗体</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>6</number>
+   </property>
+   <property name="topMargin">
+    <number>6</number>
+   </property>
+   <property name="rightMargin">
+    <number>6</number>
+   </property>
+   <property name="bottomMargin">
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>选择</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_selectAll">
+          <property name="toolTip">
+           <string>选中当前所选网格中的所有顶点、边和面。</string>
+          </property>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_selectVertices">
+          <property name="toolTip">
+           <string>选中当前所选网格中的所有顶点。</string>
+          </property>
+          <property name="text">
+           <string>顶点</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_selectEdges">
+          <property name="toolTip">
+           <string>选中当前所选网格中的所有边。</string>
+          </property>
+          <property name="text">
+           <string>边</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_selectFaces">
+          <property name="toolTip">
+           <string>选中当前所选网格中的所有面。</string>
+          </property>
+          <property name="text">
+           <string>面</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>取消选择</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_deselectAll">
+          <property name="toolTip">
+           <string>取消选择当前所选网格中的所有顶点、边和面。</string>
+          </property>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_deselectVertices">
+          <property name="toolTip">
+           <string>取消选择当前所选网格中的所有顶点。</string>
+          </property>
+          <property name="text">
+           <string>顶点</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_deselectEdges">
+          <property name="toolTip">
+           <string>取消选择当前所选网格中的所有边。</string>
+          </property>
+          <property name="text">
+           <string>边</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_deselectFaces">
+          <property name="toolTip">
+           <string>取消选择当前所选网格中的所有面。</string>
+          </property>
+          <property name="text">
+           <string>面</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="title">
+      <string>反转</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_invertAll">
+          <property name="toolTip">
+           <string>反转当前所选网格的顶点、边和面选择。</string>
+          </property>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_invertVertices">
+          <property name="toolTip">
+           <string>反转当前所选网格的顶点选择。</string>
+          </property>
+          <property name="text">
+           <string>顶点</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_invertEdges">
+          <property name="toolTip">
+           <string>反转当前所选网格的边选择。</string>
+          </property>
+          <property name="text">
+           <string>边</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_invertFaces">
+          <property name="toolTip">
+           <string>反转当前所选网格的面选择。</string>
+          </property>
+          <property name="text">
+           <string>面</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="title">
+      <string>过滤</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_8">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_filterVertices">
+          <property name="toolTip">
+           <string>取消选择所选网格中除所选顶点以外的所有元素。</string>
+          </property>
+          <property name="text">
+           <string>顶点</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_filterEdges">
+          <property name="toolTip">
+           <string>取消选择所选网格中除所选边以外的所有元素。</string>
+          </property>
+          <property name="text">
+           <string>边</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_filterFaces">
+          <property name="toolTip">
+           <string>取消选择所选网格中除所选面以外的所有元素。</string>
+          </property>
+          <property name="text">
+           <string>面</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>转换</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_toVertices">
+          <property name="toolTip">
+           <string>将所选网格中的当前选择转换为顶点选择。属于当前所选边/面的所有顶点被选中，所选边/面被取消选择。</string>
+          </property>
+          <property name="text">
+           <string>转换为顶点</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_toEdges">
+          <property name="toolTip">
+           <string>将所选网格中的当前选择转换为边选择。属于当前所选顶点/面的所有边被选中，所选顶点/面被取消选择。</string>
+          </property>
+          <property name="text">
+           <string>转换为边</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_toFaces">
+          <property name="toolTip">
+           <string>将所选网格中的当前选择转换为面选择。属于当前所选顶点/边的所有面被选中，所选顶点/边被取消选择。</string>
+          </property>
+          <property name="text">
+           <string>转换为面</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_toContainedEdges">
+          <property name="toolTip">
+           <string>将所选网格中的当前顶点选择转换为边选择。两个端点均被选中的边会被选中。最初的顶点选择将丢失。</string>
+          </property>
+          <property name="text">
+           <string>转换为包含边</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_toContainedFaces">
+          <property name="toolTip">
+           <string>将所选网格中的当前顶点选择转换为面选择。所有组成顶点均被选中的面会被选中。最初的顶点选择将丢失。</string>
+          </property>
+          <property name="text">
+           <string>转换为包含面</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>对称</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_9">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_18">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QCheckBox" name="select_symmetryAddToSelection">
+          <property name="toolTip">
+           <string>启用后，任何对称选择操作后都会保留最初的元素选择。</string>
+          </property>
+          <property name="text">
+           <string>加入选择</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_16">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_symmetryAll">
+          <property name="toolTip">
+           <string>对当前所选网格中的每个所选顶点、边和面，查找其对称对应部分并选中。若“加入选择”未启用，则取消之前所选的元素。</string>
+          </property>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_symmetryVertices">
+          <property name="toolTip">
+           <string>对当前所选网格中的每个所选顶点，查找其对称对应顶点并选中，然后若“加入选择”未启用，则取消之前所选的顶点。</string>
+          </property>
+          <property name="text">
+           <string>顶点</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_symmetryEdges">
+          <property name="toolTip">
+           <string>对当前所选网格中的每个所选边，查找其对称对应边并选中，然后若“加入选择”未启用，则取消之前所选的边。</string>
+          </property>
+          <property name="text">
+           <string>边</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_symmetryFaces">
+          <property name="toolTip">
+           <string>对当前所选网格中的每个所选面，查找其对称对应面并选中，然后若“加入选择”未启用，则取消之前所选的面。</string>
+          </property>
+          <property name="text">
+           <string>面</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>杂项</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_19">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_growVertices">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>扩展当前顶点选择。与所选顶点通过边相连的每个顶点都会被选中。</string>
+          </property>
+          <property name="text">
+           <string>扩展顶点</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_shrinkVertices">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>收缩当前顶点选择。与所选顶点通过边相连、但自身未被选中的顶点会被取消选择。</string>
+          </property>
+          <property name="text">
+           <string>收缩顶点</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_growEdges">
+          <property name="toolTip">
+           <string>扩展当前边选择。与所选边共享顶点的每条边都会被选中。</string>
+          </property>
+          <property name="text">
+           <string>扩展边</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_shrinkEdges">
+          <property name="toolTip">
+           <string>收缩当前边选择。与所选边共享顶点、但自身未被选中的边会被取消选择。</string>
+          </property>
+          <property name="text">
+           <string>收缩边</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_growFaces">
+          <property name="toolTip">
+           <string>扩展当前面选择。与所选面共享顶点或边的每个面都会被选中。</string>
+          </property>
+          <property name="text">
+           <string>扩展面</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_shrinkFaces">
+          <property name="toolTip">
+           <string>收缩当前面选择。与所选面共享顶点或边、但自身未被选中的面会被取消选择。</string>
+          </property>
+          <property name="text">
+           <string>收缩面</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_ring">
+          <property name="toolTip">
+           <string>选中与所选边相关联的边环。</string>
+          </property>
+          <property name="text">
+           <string>边环</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_loop">
+          <property name="toolTip">
+           <string>选中与所选边相关联的边循环。</string>
+          </property>
+          <property name="text">
+           <string>边循环</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_pathEdges">
+          <property name="toolTip">
+           <string>选中构成所选顶点之间路径的边。仅当恰好有两个所选顶点且它们之间存在路径时有效（顶点必须位于同一几何体壳中）。所选路径为包含边数最少的那条。</string>
+          </property>
+          <property name="text">
+           <string>路径（边数）</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_pathDistance">
+          <property name="toolTip">
+           <string>选中构成所选顶点之间路径的边。仅当恰好有两个所选顶点且它们之间存在路径时有效（顶点必须位于同一几何体壳中）。所选路径为长度最短的那条。</string>
+          </property>
+          <property name="text">
+           <string>路径（距离）</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_17">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_triangles">
+          <property name="toolTip">
+           <string>选中当前所选网格中的所有三角形。</string>
+          </property>
+          <property name="text">
+           <string>三角形</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="title">
+      <string>顶点壳</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_shell">
+          <property name="toolTip">
+           <string>将当前顶点选择扩展到这些顶点所属的壳（选中所有通过边直接或间接相连的顶点）。</string>
+          </property>
+          <property name="text">
+           <string>壳</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_shellBorder">
+          <property name="toolTip">
+           <string>选中当前所选顶点所属的顶点的壳边界顶点。取消之前所选的顶点。</string>
+          </property>
+          <property name="text">
+           <string>壳边界</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="select_addShellBorder">
+          <property name="toolTip">
+           <string>选中当前所选顶点所属的顶点的壳边界顶点。最初所选的顶点保持选中。</string>
+          </property>
+          <property name="text">
+           <string>添加壳边界</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_deselectShellBorder">
+          <property name="toolTip">
+           <string>取消选择当前所选顶点所属的顶点的壳边界顶点。最初所选的顶点保持选中。</string>
+          </property>
+          <property name="text">
+           <string>取消选择壳边界</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>10</width>
+       <height>4</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

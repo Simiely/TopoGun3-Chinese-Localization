@@ -1,0 +1,166 @@
+<?xml version="1.0" ?>
+
+<toolbar name="commonToolbar" text="通用" dock="top">
+	<toolbarButton name="newScene" icon="new"/>
+	<toolbarButton name="save" text="保存" icon="save" toolTip="保存">
+		<menuItem name="saveScene"/>
+		<menuItem name="saveSceneAs"/>
+		<menuSeparator/>
+		<menuItem name="exportMesh"/>
+		<menuItem name="exportMeshBack"/>
+		<menuItem name="exportReference"/>
+	</toolbarButton>
+	<toolbarButton name="load" text="加载" icon="load" toolTip="加载">
+		<menuItem name="loadScene" text="加载场景"/>
+		<menuSeparator/>
+		<menuItem name="loadReference" text="加载参考"/>
+		<menuItem name="reloadReference" text="重新加载参考"/>
+		<menuItem name="replaceReference" text="替换参考"/>
+		<menuSeparator/>
+		<menuItem name="loadMesh" text="加载网格"/>
+	</toolbarButton>
+
+	<toolbarSpacer/>
+
+	<toolbarButton name="createMesh" icon="create" context="none,referencemesh,mesh" toolTip="创建网格"/>
+	<toolbarButton name="deleteSelectedObject" icon="deleteSelectedObject" context="referencemesh,mesh" toolTip="删除选中对象"/>
+	
+	<toolbarSpacer context="mesh"/>
+
+	<toolbarButton name="referenceMeshButton" icon="referenceMesh" context="mesh" toolTip="参考网格选项">
+			<menuCheckItem name="reference_useVertexColors"/>
+			<menuCheckItem name="reference_useTexture"/>
+		<menuSeparator/>
+			<menuCheckItem name="reference_smoothShade"/>
+			<menuCheckItem name="reference_wireframe"/>
+		<menuSeparator/>
+			<menuCheckItem name="masking_showInViewport"/>
+	</toolbarButton>
+
+	<toolbarStretch/>
+
+	<toolbarButton name="reference_contour" icon="contour" context="referencemesh"/>
+	<toolbarButton name="reference_boundingBox" icon="boundingBox" context="referencemesh"/>
+	<toolbarSpacer context="referencemesh"/>
+	<toolbarButton name="reference_useVertexColors" icon="vertexColors" context="referencemesh"/>
+	<toolbarButton name="reference_useTexture" icon="texture" context="referencemesh"/>
+	<toolbarSpacer context="referencemesh"/>
+	<toolbarButton name="reference_smoothShade" icon="smoothShade" context="referencemesh"/>
+	<toolbarButton name="reference_wireframe" icon="wireFrame" context="referencemesh"/>
+	<toolbarSpacer context="referencemesh"/>
+	<toolbarButton name="masking_showInViewport" icon="mask" context="referencemesh"/>
+
+	<toolbarSpacer context="mesh"/>
+	<toolbarButton name="select_selectAll" text="全选" icon="selectAll" context="mesh" toolTip="选择所有元素"/>
+	<toolbarButton name="select_deselectAll" text="全不选" icon="selectNone" context="mesh" toolTip="取消选择"/>
+	<toolbarButton name="select_invertAll" text="反选" icon="selectInvert" context="mesh" toolTip="反选选择"/>
+	
+
+	<toolbarButton name="selectVerticesButton" text="顶点" icon="selectVertices" context="mesh" toolTip="顶点选择">
+		<menuItem name="select_selectVertices" text="选择所有顶点"/>
+		<menuItem name="select_deselectVertices" text="取消选择顶点"/>
+		<menuItem name="select_invertVertices" text="反选顶点"/>
+		<menuItem name="select_filterVertices" text="筛选顶点选择"/>
+	</toolbarButton>
+
+	<toolbarButton name="selectEdgesButton" text="边" icon="selectEdges" context="mesh" toolTip="边选择">
+		<menuItem name="select_selectEdges" text="选择所有边"/>
+		<menuItem name="select_deselectEdges" text="取消选择边"/>
+		<menuItem name="select_invertEdges" text="反选边"/>
+		<menuItem name="select_filterEdges" text="筛选边选择"/>
+	</toolbarButton>
+
+	<toolbarButton name="selectFacesButton" text="面" icon="selectFaces" context="mesh" toolTip="面选择">
+		<menuItem name="select_selectFaces" text="选择所有面"/>
+		<menuItem name="select_deselectFaces" text="取消选择面"/>
+		<menuItem name="select_invertFaces" text="反选面"/>
+		<menuItem name="select_filterFaces" text="筛选面选择"/>
+		<menuSeparator/>
+		<menuItem name="select_triangles" text="选择所有三角形"/>
+	</toolbarButton>
+
+	<toolbarSpacer context="mesh"/>
+
+	<toolbarButton name="selectConvertMenu" icon="selectConvert" context="mesh" toolTip="转换选择"/>
+	<toolbarButton name="selectSymmetryButton" icon="selectSymmetry" context="mesh" toolTip="对称选择">
+			<menuItem name="select_symmetryAll" text="选择对称"/>
+			<menuItem name="select_symmetryVertices" text="选择对称顶点"/>
+			<menuItem name="select_symmetryEdges" text="选择对称边"/>	
+			<menuItem name="select_symmetryFaces" text="选择对称面"/>
+		<menuSeparator/>
+			<menuItem name="select_addSymmetryAll" text="添加对称"/>
+			<menuItem name="select_addSymmetryVertices" text="添加对称顶点"/>
+			<menuItem name="select_addSymmetryEdges" text="添加对称边"/>	
+			<menuItem name="select_addSymmetryFaces" text="添加对称面"/>
+	</toolbarButton>
+
+	<toolbarButton name="selectMiscButton" text="杂项" icon="select" context="mesh" toolTip="杂项选择">
+			<menuItem name="select_grow" text="扩展选择"/>
+			<menuItem name="select_shrink" text="收缩选择"/>
+		<menuSeparator/>
+			<menuItem name="select_shell" text="选择顶点壳"/>
+	</toolbarButton>
+
+	<toolbarSpacer context="mesh"/>
+
+	<toolbarButton name="select_pathEdges" icon="selectPath" context="mesh" toolTip="选择边路径"/>
+	<toolbarButton name="select_ring" icon="selectRing" context="mesh" toolTip="选择边环"/>
+	<toolbarButton name="select_loop" icon="selectLoop" context="mesh" toolTip="选择边循环"/>
+
+
+
+	
+	<toolbarSpacer context="mesh"/>
+	<toolbarSpacer context="mesh"/>
+	<toolbarSpacer context="mesh"/>
+
+	<toolbarButton name="modifyVerticesMenu" icon="modifyVertices" context="mesh" toolTip="修改顶点">
+		<menuSeparator/>
+			<menuItem name="modify_relax"/>
+			<menuItem name="modify_relaxWithSelected"/>
+	</toolbarButton>
+	<toolbarButton name="modifyEdgesMenu" icon="modifyEdges" context="mesh" toolTip="修改边"/>
+	<toolbarButton name="modifyFacesButton" icon="modifyFaces" context="mesh" toolTip="修改面">
+		<menuItem name="modify_subdivide"/>
+		<menuItem name="modify_subdivideSelected"/>
+	</toolbarButton>
+	<toolbarButton name="modifySymmetryButton" icon="modifySymmetry" context="mesh" toolTip="修改对称">
+			<menuItem name="modify_symmetryCreate" text="创建对称"/>
+			<menuItem name="modify_symmetryAdjust" text="调整对称"/>
+			<menuItem name="modify_symmetryDelete" text="删除对称"/>
+		<menuSeparator/>
+			<menuItem name="modify_symmetryZero" text="归零吸附"/>
+			<menuItem name="modify_splitBySymmetryPlane" text="按对称平面分割"/>
+	</toolbarButton>
+
+	<toolbarSpacer context="mesh"/>
+	<toolbarButton name="modify_forceRefresh" icon="forceRefresh" context="mesh" toolTip="强制刷新"/>
+	<toolbarButton name="deleteButton" icon="delete" context="mesh" toolTip="删除">
+		<menuItem name="modify_delete"/>
+		<menuItem name="modify_deleteEdges"/>
+	</toolbarButton>
+	<toolbarButton name="meshModify" text="修改" icon="modify" toolTip="修改选中网格" context="mesh">
+			<menuItem name="modify_reverseNormals"/>
+			<menuItem name="modify_rebuildNormals"/>
+		<menuSeparator/>
+			<menuItem name="modify_unify"/>
+	</toolbarButton>
+
+
+	<toolbarStretch/>
+
+	<toolbarButton name="bakeView" context="mesh,referencemesh"/>
+	
+	<toolbarSpacer/>
+
+	<toolbarButton name="symmetry" icon="symmetry" context="none,referencemesh,mesh"/>
+	<toolbarButton name="steadyMouse"/>
+	<toolbarSpacer/>
+	<toolbarButton name="sceneView" icon="sceneview"/>
+	<toolbarButton name="inspectorView" icon="inspectorview"/>
+	<toolbarButton name="symmetryOptionsView"/>
+	<toolbarButton name="toolOptionsView"/>
+	<toolbarSpacer/>
+	<toolbarButton name="optionsMenu" icon="options"/>
+</toolbar>
+

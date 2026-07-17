@@ -1,0 +1,558 @@
+<?xml version="1.0" ?>
+<!--section: N, NE, E, SE, S, SW, W, NW-->
+
+<pieMenu name="global">
+	<pie>
+		<pieMenu text="视图" section="SE">
+			<pie>
+			 	<checkItem name="sceneView" text="场景" section="NE"/>
+				<checkItem name="inspectorView" text="检查器" section="E"/>
+				<checkItem name="toolOptionsView" text="工具选项" section="SE"/>
+				<item name="resetLayout" text="重置界面" section="S"/>
+				<checkItem name="bakeView" text="烘焙" section="SW"/>
+				<checkItem name="symmetryOptionsView" text="对称选项" section="W"/>
+				<checkItem name="historyView" text="历史" section="N"/>
+			</pie>
+		</pieMenu>
+
+		<checkItem name="showToolbar" text="显示工具栏" section="S"/>
+	</pie>
+
+	<menu>
+		<item name="frameSelection" text="框显选中"/>
+		<item name="frameAll" text="框显全部"/>
+		<itemSeparator/>
+		<checkItem name="symmetry" text="启用对称"/>	
+		<checkItem name="steadyMouse" text="稳定鼠标"/>
+		<checkItem name="alwaysShowGuides" text="引导线"/>
+		<itemSeparator/>
+		<checkItem name="seeThrough" text="透视显示"/>
+        <checkItem name="alphaRender" text="透明渲染"/>
+        <checkItem name="smoothShade" text="平滑着色"/>
+        <itemSeparator/>
+		<checkItem name="wireframe" text="仅线框"/>
+		<checkItem name="wireframeMesh" text="线框"/>
+	</menu>
+</pieMenu>
+
+
+
+<pieMenu name="referencemesh">
+	<pie>
+		<pieMenu text="参考" section="SW">
+			<pie>
+			 	<checkItem name="reference_useVertexColors" text="顶点颜色" section="W"/>
+			 	<checkItem name="reference_useTexture" text="纹理" section="NW"/>
+			 	<checkItem name="reference_smoothShade" text="平滑着色" section="N"/>
+			 	<checkItem name="reference_wireframe" text="线框" section="E"/>
+			 	<checkItem name="reference_contour" text="轮廓" section="SE"/>
+			 	<checkItem name="reference_boundingBox" text="边界框" section="S"/>
+				<pieMenu text="遮罩" section="SW">
+					<pie>
+						<item name="masking_invert" text="反转遮罩" section="W"/>
+						<item name="masking_blur" text="模糊遮罩" section="NW"/>
+						<item name="masking_clear" text="清除遮罩" section="N"/>
+						<checkItem name="masking_showInViewport" text="显示遮罩" section="S"/>
+					</pie>
+				</pieMenu>
+			</pie>
+		</pieMenu>
+	</pie>
+</pieMenu>
+
+
+<pieMenu name="mesh" color="#29332a">
+	<pie>
+		<pieMenu text="选择" section="E">
+			<pie>
+				<item name="select_ring" text="边环" section="N"/>
+				<pieMenu text="杂项" section="NE">
+					<pie>
+
+						<pieMenu text="转换" section="W">
+							<pie>
+								<item name="select_toVertices" text="转为顶点" section="NW"/>
+								<item name="select_toEdges" text="转为边" section="W"/>
+								<item name="select_toFaces" text="转为面" section="SW"/>
+								<item name="select_toContainedEdges" text="转为包含边" section="NE"/>
+								<item name="select_toContainedFaces" text="转为包含面" section="SE"/>
+							</pie>
+						</pieMenu>
+
+						<pieMenu text="对称" section="NW">
+							<pie>
+								
+								<pieMenu text="顶点" section="NW">
+									<pie>
+										<item name="select_symmetryVertices" text="选择顶点" section="W"/>
+										<item name="select_addSymmetryVertices" text="添加顶点" section="NW"/>
+									</pie>
+								</pieMenu>
+
+								<pieMenu text="边" section="W">
+									<pie>
+										<item name="select_symmetryEdges" text="选择边" section="W"/>
+										<item name="select_addSymmetryEdges" text="添加边" section="NW"/>
+									</pie>
+								</pieMenu>
+
+								<pieMenu text="面" section="SW">
+									<pie>
+										<item name="select_symmetryFaces" text="选择面" section="W"/>
+										<item name="select_addSymmetryFaces" text="添加面" section="NW"/>
+									</pie>
+								</pieMenu>
+								
+								<item name="select_symmetryAll" text="全选" section="NE"/>
+								<item name="select_addSymmetryAll" text="添加全部" section="E"/>
+							</pie>
+						</pieMenu>
+
+						<pieMenu text="壳" section="N">
+							<pie>
+								<item name="select_shell" text="选择壳" section="W"/>
+								<item name="select_shellBorder" text="选择边界" section="NW"/>
+								<item name="select_addShellBorder" text="添加边界" section="N"/>
+								<item name="select_deselectShellBorder" text="取消选择边界" section="NE"/>
+							</pie>
+						</pieMenu>
+
+						<pieMenu text="扩展" section="NE">
+							<pie>
+								<item name="select_grow" text="扩展全部" section="W"/>
+								<item name="select_growVertices" text="扩展顶点" section="N"/>
+								<item name="select_growEdges" text="扩展边" section="E"/>
+								<item name="select_growFaces" text="扩展面" section="S"/>
+							</pie>
+						</pieMenu>
+
+						<pieMenu text="收缩" section="E">
+							<pie>
+								<item name="select_shrink" text="收缩全部" section="NW"/>
+								<item name="select_shrinkVertices" text="收缩顶点" section="NE"/>
+								<item name="select_shrinkEdges" text="收缩边" section="SE"/>
+								<item name="select_select_shrinkFacesgrowFaces" text="收缩面" section="SW"/>
+							</pie>
+						</pieMenu>
+
+						<item name="select_pathDistance" text="按距离路径" section="SE"/>
+						<item name="select_pathEdges" text="路径" section="S"/>
+						
+					</pie>
+				</pieMenu>
+				<item name="select_loop" text="边循环" section="E"/>
+				<pieMenu text="顶点" section="SE">
+					<pie>
+						<item name="select_selectVertices" text="全选" section="E"/>
+						<item name="select_deselectVertices" text="取消全选" section="SE"/>
+						<item name="select_invertVertices" text="反转" section="S"/>
+						<item name="select_filterVertices" text="筛选" section="SW"/>
+					</pie>
+				</pieMenu>
+				<pieMenu text="边" section="S">
+					<pie>
+						<item name="select_selectEdges" text="全选" section="SE"/>
+						<item name="select_deselectEdges" text="取消全选" section="S"/>	
+						<item name="select_invertEdges" text="反转" section="SW"/>
+						<item name="select_filterEdges" text="筛选" section="W"/>
+					</pie>
+				</pieMenu>
+				<pieMenu text="面" section="SW">
+					<pie>
+						<item name="select_triangles" text="选择三角形" section="E"/>
+						<item name="select_selectFaces" text="全选" section="S"/>
+						<item name="select_deselectFaces" text="取消全选" section="SW"/>
+						<item name="select_invertFaces" text="反转" section="W"/>
+						<item name="select_filterFaces" text="筛选" section="NW"/>
+					</pie>
+				</pieMenu>
+				<pieMenu text="全部" section="NW">
+					<pie>
+						<item name="select_selectAll" text="全选" section="S"/>
+						<item name="select_deselectAll" text="取消全选" section="W"/>
+						<item name="select_invertAll" text="反选选择" section="N"/>
+					</pie>
+				</pieMenu>
+			</pie>
+		</pieMenu>
+		<pieMenu text="修改" section="W">
+			<pie>
+				<item name="modify_connect" text="连接边" section="N"/>
+				<pieMenu text="杂项" section="SE">
+					<pie>
+						<pieMenu text="细分" section="E">
+							<pie>
+								<checkItem name="modify_subdivideConnectWithUnselected" text="与未选中连接" section="N"/>
+								<item name="modify_subdivide" text="全部细分" section="E"/>
+								<item name="modify_subdivideSelected" text="细分选中" section="S"/>
+							</pie>
+						</pieMenu>
+						<pieMenu text="对称" section="SE">
+							<pie>
+								<item name="modify_symmetryZero" text="归零吸附" section="N"/>
+								<checkItem name="modify_symmetryConformAfter" text="吸附后贴合" section="NE"/>
+
+								<item name="modify_symmetryCreate" text="创建对称" section="E"/>
+								<item name="modify_symmetryAdjust" text="调整对称" section="SE"/>
+								<item name="modify_symmetryDelete" text="删除对称" section="S"/>
+
+								<item name="modify_splitBySymmetryPlane" text="按平面分割" section="SW"/>
+								<checkItem name="modify_splitBySymmetryPlaneForceFaces" text="强制分割面" section="W"/>
+							</pie>
+						</pieMenu>
+						<item name="modify_reverseNormals" text="反转法线" section="SW"/>
+						<item name="modify_rebuildNormals" text="重建法线" section="W"/>
+					</pie>
+				</pieMenu>
+				<item name="modify_forceRefresh" text="强制刷新" section="NE"/>
+				<item name="modify_collapse" text="塌陷边" section="S"/>
+				<pieMenu text="顶点" section="SW">
+					<pie>
+						<pieMenu text="松弛" section="E">
+							<pie>
+								<item name="modify_relax" text="松弛" section="E"/>
+								<item name="modify_relaxWithSelected" text="与选中一起松弛" section="SE"/>
+								<checkItem name="modify_relaxPreserveBorders" text="保留边界" section="SW"/>
+							</pie>
+						</pieMenu>
+						<item name="modify_mergeVertices" text="合并" section="SE"/>
+						<item name="modify_grabVertices" text="抓取" section="S"/>
+						<item name="modify_weldVertices" text="焊接" section="SW"/>
+						<item name="modify_bridge" text="桥接" section="W"/>
+						<item name="modify_bridgeWithClosest" text="与最近桥接" section="NW"/>
+						<item name="modify_conform" text="贴合" section="N"/>
+					</pie>
+				</pieMenu>
+				<item name="modify_deleteEdges" text="删除边" section="W"/>
+				<pieMenu text="边" section="NW">
+					<pie>
+						<item name="modify_spin" text="自旋" section="W"/>
+						<item name="modify_grabEdges" text="抓取边" section="NW"/>
+						<item name="modify_connectRing" text="连接环" section="N"/>
+					</pie>
+				</pieMenu>
+			</pie>
+		</pieMenu>
+	</pie>
+</pieMenu>
+
+
+
+<pieMenu name="referencemask" color="#332929">
+	<pie>
+		<checkItem name="referenceMask_useTablet" text="使用数位板" section="W"/>
+		<item name="masking_invert" text="反转遮罩" section="NW"/>
+		<item name="masking_blur" text="模糊遮罩" section="N"/>
+		<item name="masking_clear" text="清除遮罩" section="NE"/>
+	</pie>
+</pieMenu>
+
+
+<pieMenu name="referenceguides" color="#332929">
+	<pie>
+		<checkItem name="referenceGuides_alwaysShow" text="始终显示线" section="W"/>
+		<item name="referenceGuides_smooth" text="平滑" section="NW"/>
+		<pieMenu text="清除" section="N">
+			<pie>
+				<item name="referenceGuides_clearSelected" text="清除选中" section="N"/>
+				<item name="referenceGuides_clearAll" text="全部清除" section="NE"/>
+			</pie>
+		</pieMenu>
+		<pieMenu text="修改" section="NE">
+			<pie>
+				<item name="referenceGuides_mirror" text="镜像" section="NW"/>
+				<item name="referenceGuides_close" text="闭合" section="N"/>
+				<item name="referenceGuides_cut" text="切割" section="NE"/>
+				<checkItem name="referenceGuides_intersect" text="相交" section="E"/>
+				<checkItem name="referenceGuides_weld" text="焊接" section="SE"/>
+			</pie>
+		</pieMenu>
+		<item name="referenceGuides_projectOnSymmetryPlane" text="投影到对称平面" section="E"/>
+	</pie>
+</pieMenu>
+
+
+<pieMenu name="simpleedit" color="#332929">
+	<pie>
+		<pieMenu text="框选" section="NW">
+			<pie>
+				<checkItem name="simpleEdit_selectModeRectangle" text="矩形" section="SW"/>
+				<checkItem name="simpleEdit_selectModeCircle" text="圆形" section="W"/>
+				<checkItem name="simpleEdit_selectModeLasso" text="套索" section="NW"/>
+				<checkItem name="simpleEdit_selectModeBrush" text="笔刷" section="N"/>
+			</pie>
+		</pieMenu>
+		<pieMenu text="选择模式" section="N">
+			<pie>
+				<checkItem name="simpleEdit_selectVertices" text="切换顶点" section="NW"/>
+				<checkItem name="simpleEdit_selectEdges" text="切换边" section="W"/>
+				<checkItem name="simpleEdit_selectFaces" text="切换面" section="SW"/>
+				<item name="simpleEdit_selectVerticesOnly" text="顶点" section="NE"/>
+				<item name="simpleEdit_selectEdgesOnly" text="边" section="E"/>
+				<item name="simpleEdit_selectFacesOnly" text="面" section="SE"/>
+			</pie>
+		</pieMenu>
+		<pieMenu text="选项" section="NE">
+			<pie>
+				<checkItem name="simpleEdit_backFaces" text="背面" section="NW"/>
+				<checkItem name="simpleEdit_negativeScale" text="负向缩放" section="N"/>
+				<checkItem name="simpleEdit_transform" text="变换" section="NE"/>
+				<checkItem name="simpleEdit_symTransform" text="对称变换" section="E"/>
+				<checkItem name="simpleEdit_symSelect" text="对称选择" section="SE"/>
+				<checkItem name="simpleEdit_excludeSym" text="排除对称" section="S"/>
+			</pie>
+		</pieMenu>
+	</pie>
+</pieMenu>
+
+
+<pieMenu name="simplecreate" color="#332929">
+	<pie>
+		<checkItem name="simpleCreate_makeFaces" text="生成面" section="NW"/>
+		<checkItem name="simpleCreate_intersectedSplitEdge" text="不移动分割边顶点" section="N"/>
+        <checkItem name="simpleCreate_autoSelect" text="自动选择" section="NE"/>
+	</pie>
+</pieMenu>
+
+
+<pieMenu name="draw" color="#332929">
+	<pie>
+		<pieMenu text="模式" section="NW">
+			<pie>
+				<checkItem name="draw_line" text="绘制线" section="N"/>
+				<checkItem name="draw_loft" text="绘制放样" section="NE"/>
+				<checkItem name="draw_sweep" text="绘制扫描" section="E"/>
+				<item name="draw_setLine" text="设置线" section="W"/>
+				<item name="draw_setLoft" text="设置放样" section="SW"/>
+				<item name="draw_setSweep" text="设置扫描" section="S"/>
+			</pie>
+			<menu>
+				<checkItem name="draw_autoInvert" text="自动反转"/>	
+				<checkItem name="draw_forceStartEnd" text="强制首尾顶点"/>
+			</menu>
+		</pieMenu>
+		<item name="draw_apply" text="创建几何体" section="N"/>
+		<pieMenu text="清除" section="E">
+			<pie>
+				<item name="draw_clearSelected" text="清除选中" section="E"/>
+				<item name="draw_clearAll" text="全部清除" section="SE"/>
+			</pie>
+		</pieMenu>
+		<pieMenu text="修改" section="NE">
+			<pie>
+				<pieMenu text="对称" section="NW">
+					<pie>
+						<item name="draw_mirror" text="镜像" section="NW"/>
+						<item name="draw_projectOnSymmetryPlane" text="投影到对称平面" section="W"/>
+					</pie>
+				</pieMenu>
+				<item name="draw_close" text="闭合" section="N"/>
+				<item name="draw_cut" text="切割" section="NE"/>
+				<checkItem name="draw_intersect" text="相交" section="E"/>
+				<checkItem name="draw_weld" text="焊接" section="SE"/>
+				<checkItem name="draw_invert" text="反转" section="S"/>
+				<item name="draw_smooth" text="平滑" section="W"/>
+			</pie>
+		</pieMenu>
+		<checkItem name="draw_preview" text="预览相交" section="W"/>
+	</pie>
+</pieMenu>
+
+
+<pieMenu name="bridge" color="#332929">
+	<pie>
+		<checkItem name="bridge_edges" text="边模式" section="NW"/>
+		<pieMenu text="线条" section="N">
+			<pie>
+				<checkItem name="bridge_line" text="自由绘制" section="NE"/>
+				<checkItem name="bridge_straightLine" text="直线" section="NW"/>
+			</pie>
+		</pieMenu>
+		<checkItem name="bridge_faces" text="面模式" section="NE"/>
+	</pie>
+</pieMenu>
+
+
+<pieMenu name="tubes" color="#332929">
+	<pie>
+        <checkItem name="tubes_precise" text="精确模式" section="SW"/>
+		<checkItem name="tubes_xRay" text="透视显示" section="W"/>
+		
+		<pieMenu text="修改" section="NW">
+			<pie>
+				<item name="tubes_invert" text="反转上一个" section="W"/>
+				<item name="tubes_undo" text="清除上一个" section="N"/>
+			</pie>
+		</pieMenu>
+
+		<item name="tubes_create" text="创建几何体" section="N"/>
+		<item name="tubes_reset" text="重置" section="NE"/>
+	</pie>
+</pieMenu>
+
+
+<pieMenu name="brushedit" color="#332929">
+	<pie>
+		<pieMenu text="模式" section="NW">
+			<pie>
+				<checkItem name="brushEdit_move" text="移动" section="S"/>
+				<pieMenu text="松弛/捏合" section="SW">
+					<pie>
+						<checkItem name="brushEdit_relax" text="松弛" section="SW"/>
+						<checkItem name="brushEdit_pinch" text="捏合" section="W"/>
+					</pie>
+				</pieMenu>
+				<checkItem name="brushEdit_inflate" text="膨胀" section="W"/>
+				<checkItem name="brushEdit_standard" text="标准" section="NW"/>
+				<checkItem name="brushEdit_screenProject" text="屏幕投影" section="N"/>
+				<checkItem name="brushEdit_conform" text="贴合" section="NE"/>
+				<checkItem name="brushEdit_select" text="选择" section="E"/>
+			</pie>
+		</pieMenu>
+		<checkItem name="brushEdit_keepBorder" text="保留边界" section="N"/>
+		<pieMenu text="选项" section="NE">
+			<pie>
+				<checkItem name="brushEdit_useSelection" text="使用选择" section="NE"/>
+				<checkItem name="brushEdit_backfaces" text="背面" section="E"/>
+				<checkItem name="brushEdit_useTablet" text="使用数位板" section="SE"/>
+			</pie>
+		</pieMenu>
+	</pie>
+</pieMenu>
+
+
+<pieMenu name="extrude" color="#332929">
+	<pie>
+		<checkItem name="extrude_crawl" text="爬行模式" section="NW"/>
+		<checkItem name="extrude_project" text="投影模式" section="N"/>
+		<checkItem name="extrude_free" text="自由模式" section="NE"/>
+	</pie>
+</pieMenu>
+
+
+<pieMenu name="slice" color="#332929">
+	<pie>
+		<checkItem name="slice_deep" text="深度切片" section="NW"/>
+		<checkItem name="slice_forceFaces" text="强制生成面" section="N"/>
+		<checkItem name="slice_extended" text="扩展切片" section="NE"/>
+	</pie>
+</pieMenu>
+
+<pieMenu name="slide" color="#332929">
+	<pie>
+		<checkItem name="slide_xRay" text="透视显示" section="NW"/>
+	</pie>
+</pieMenu>
+
+<pieMenu name="cut" color="#332929">
+	<pie>
+		
+		<pieMenu text="选项" section="W">
+			<pie>
+				<checkItem name="cut_xRay" text="透视显示" section="W"/>
+				<checkItem name="cut_relax" text="松弛角点" section="N"/>
+				<checkItem name="cut_quads" text="生成四边形" section="S"/>
+			</pie>
+		</pieMenu>
+
+		<item name="cut_undo" text="删除上一个" section="NW"/>
+		<item name="cut_cut" text="切割几何体" section="N"/>
+		<item name="cut_reset" text="重置" section="NE"/>
+
+		<pieMenu text="模式" section="E">
+			<pie>
+				<checkItem name="cut_lines" text="线条" section="NE"/>
+				<checkItem name="cut_freeHand" text="自由绘制" section="SE"/>
+			</pie>
+		</pieMenu>
+
+	</pie>
+</pieMenu>
+
+<pieMenu name="circle" color="#332929">
+	<pie>
+		<item name="circle_createGeometry" text="创建几何体" section="N"/>
+		<item name="circle_reset" text="重置" section="NE"/>
+		<checkItem name="circle_invert" text="反向绘制" section="NW"/>
+		<checkItem name="circle_enableGeo" text="启用几何体" section="W"/>
+	</pie>
+</pieMenu>
+
+<pieMenu name="shell" color="#332929">
+	<pie>
+		<checkItem name="shell_xRay" text="透视显示" section="W"/>
+		<checkItem name="shell_uniform" text="均匀厚度" section="NW"/>
+		<item name="shell_createGeometry" text="创建几何体" section="N"/>
+		<item name="shell_reset" text="重置" section="NE"/>
+	</pie>
+</pieMenu>
+
+
+<pieMenu name="patch" color="#332929">
+	<pie>
+		<item name="patch_createGeometry" text="创建几何体" section="N"/>
+
+		<pieMenu text="创建" section="NW">
+			<pie>
+				<checkItem name="patch_freeHand" text="徒手模式" section="N"/>
+				<checkItem name="patch_straightLines" text="直线模式" section="NE"/>
+				<item name="patch_addGeometryLine" text="添加几何线" section="NW"/>
+			</pie>
+		</pieMenu>
+
+		<pieMenu text="修改" section="NE">
+			<pie>
+				<pieMenu text="对称" section="NW">
+					<pie>
+						<item name="patch_mirror" text="镜像" section="NW"/>
+						<item name="patch_projectOnSymmetryPlane" text="投影到对称平面" section="W"/>
+					</pie>
+				</pieMenu>
+				<item name="patch_close" text="闭合" section="N"/>
+				<item name="patch_cut" text="切割" section="NE"/>
+				<checkItem name="patch_intersect" text="相交" section="E"/>
+				<checkItem name="patch_weld" text="焊接" section="SE"/>
+				<item name="patch_quads" text="优化为四边形" section="S"/>
+				<item name="patch_smooth" text="平滑" section="W"/>
+			</pie>
+		</pieMenu>
+
+		<pieMenu text="清除" section="E">
+			<pie>
+				<item name="patch_clearUnconnected" text="清除未连接" section="NE"/>
+				<item name="patch_clearSelected" text="清除选中" section="E"/>
+				<item name="patch_clearAll" text="全部清除" section="SE"/>
+			</pie>
+		</pieMenu>
+
+		<item name="patch_toSelected" text="选中细分" section="SE"/>	
+
+        <pieMenu text="放样模式" section="S">
+			<pie>
+                <checkItem name="patch_loftAllowGeometryLines" text="允许放样几何线" section="E"/>
+                <checkItem name="patch_loftConstrain" text="约束放样边" section="SE"/>
+                <checkItem name="patch_loft" text="启用放样模式" section="S"/>
+                <item name="patch_loftSetDivs" text="放样细分" section="SW"/>
+                <checkItem name="patch_loftAuto" text="自动放样细分" section="W"/>
+                <checkItem name="patch_loftAutoFromFirst" text="仅从第一条线" section="NW"/>
+			</pie>
+		</pieMenu>
+
+
+		<item name="patch_fromSelected" text="默认细分" section="SW"/>	
+
+		<pieMenu text="选项" section="W">
+			<pie>
+				<checkItem name="patch_allowTriangles" text="允许三角形" section="W"/>
+				<checkItem name="patch_allowGeometryLines" text="允许几何线" section="NW"/>
+				<checkItem name="patch_projectGeometry" text="贴合几何体" section="N"/>
+				<checkItem name="patch_alwaysShow" text="始终显示线" section="NE"/>
+				<checkItem name="patch_enablePolygon" text="启用选中多边形" section="SE"/>
+				<checkItem name="patch_projectLines" text="贴合直线" section="S"/>
+				<checkItem name="patch_screenProject" text="屏幕投影" section="SW"/>
+			</pie>
+		</pieMenu>
+
+		
+	</pie>
+</pieMenu>

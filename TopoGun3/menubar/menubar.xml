@@ -1,0 +1,272 @@
+<?xml version="1.0" ?>
+
+
+<menu name="fileMenu" text="文件" buttonText="文件">
+		<menuItem name="newScene" text="新建场景" buttonText="新建场景" toolTip="创建新场景"/>
+	<menuSeparator/>
+		<menuItem name="loadScene" text="加载场景" buttonText="加载场景" />
+		<menuItem name="loadMesh" text="加载网格" buttonText="加载网格" />
+		<menuItem name="reloadMesh" text="重载网格" buttonText="重载网格" />
+	<menuSeparator/>
+		<menuItem name="loadReference" text="加载参考网格" buttonText="加载参考" />
+		<menuItem name="reloadReference" text="重新加载参考网格" buttonText="重载参考"/>
+		<menuItem name="replaceReference" text="替换参考网格" buttonText="替换参考"/>
+	<menuSeparator/>
+		<menuItem name="saveScene" text="保存场景" buttonText="保存场景" />
+		<menuItem name="saveSceneAs" text="场景另存为" buttonText="另存为" />
+	<menuSeparator/>
+		<menuItem name="exportMesh" text="导出网格" buttonText="导出网格" target="mesh"/>
+		<menuItem name="exportMeshBack" text="导出回网格" buttonText="导出回" target="mesh"/>
+		<menuItem name="exportAllMeshesBack" text="导出所有网格回原处" buttonText="导出全部回"/>
+		<menuItem name="exportReference" text="导出参考网格" buttonText="导出参考"/>
+	<menuSeparator/>
+		<menu name="recentFiles" text="最近文件"  buttonText="最近"></menu>
+	<menuSeparator/>
+		<menuItem name="quit" text="退出" buttonText="退出" />
+</menu>
+
+
+<menu name="editMenu" text="编辑" buttonText="编辑">
+		<menuItem name="undo" text="撤销" buttonText="撤销" />
+		<menuItem name="redo" text="重做" buttonText="重做" />
+		<menuItem name="clearHistory" text="清除历史" buttonText="清除历史" />
+        <menuItem name="repeatLast" text="重复上次" buttonText="重复" />
+	<menuSeparator/>
+		<menuItem name="deleteSelectedObject" text="删除选中对象" buttonText="删除" />
+	<menuSeparator/>
+		<menuItem name="saveLayout" text="保存界面" buttonText="保存界面" />
+		<menuItem name="resetLayout" text="重置界面" buttonText="重置界面" />
+	<menuSeparator/>
+		<menuItem name="hotkeys" text="键盘快捷键" buttonText="快捷键" />
+		<menuItem name="preferences" text="首选项" buttonText="首选项" />
+</menu>
+
+
+<menu name="meshMenu" text="网格" buttonText="网格">
+	    <menuItem name="createMesh" text="创建网格" buttonText="创建网格"/>
+        <menuItem name="duplicateMesh" text="复制网格" buttonText="复制" target="mesh"/>
+	    <menuItem name="mergeVisible" text="合并可见" buttonText="合并可见" toolTip="合并可见网格"/>
+    <menuSeparator/>
+		<menuItem name="clearMesh" text="清除几何体" buttonText="清除几何" target="mesh"/>
+    <menuSeparator/>
+        <menuItem name="copyGeometry" text="复制几何体" buttonText="复制几何" target="mesh"/>
+		<menuItem name="cutGeometry" text="剪切几何体" buttonText="剪切几何" target="mesh"/>
+        <menuItem name="pasteGeometry" text="粘贴几何体" buttonText="粘贴几何" target="mesh"/>
+</menu>
+
+
+<menu name="selectMeshMenu" text="选择"  buttonText="选择">
+		<menuItem name="selectParent" text="选择父级" buttonText="选父级"/>
+	<menuSeparator/>
+		<menuItem name="select_selectAll" text="全选" buttonText="全选" target="mesh"/>
+		<menuItem name="select_deselectAll" text="全部不选" buttonText="全不选" target="mesh"/>
+		<menuItem name="select_invertAll" text="反选" buttonText="反选" target="mesh"/>
+	<menuSeparator/>
+		<menu name="selectAllMenu" text="按类型全选"  buttonText="全选">
+				<menuItem name="select_selectVertices" text="全选顶点" buttonText="选顶点" target="mesh"/>
+				<menuItem name="select_selectEdges" text="全选边" buttonText="选边" target="mesh"/>
+				<menuItem name="select_selectFaces" text="全选面" buttonText="选面" target="mesh"/>
+			<menuSeparator/>
+				<menuItem name="select_triangles" text="全选三角形" buttonText="三角形" target="mesh"/>
+		</menu>
+		<menu name="deselectAllMenu" text="按类型取消全选"  buttonText="取消全选">
+				<menuItem name="select_deselectVertices" text="取消选择顶点" buttonText="取消选顶点" target="mesh"/>
+				<menuItem name="select_deselectEdges" text="取消选择边" buttonText="取消选边" target="mesh"/>
+				<menuItem name="select_deselectFaces" text="取消选择面" buttonText="取消选面" target="mesh"/>
+		</menu>
+		<menuSeparator/>
+		<menu name="selectInvertMenu" text="按类型反选"  buttonText="反转选">
+			<menuItem name="select_invertVertices" text="反选顶点" buttonText="反选顶点" target="mesh"/>
+			<menuItem name="select_invertEdges" text="反选边" buttonText="反选边" target="mesh"/>
+			<menuItem name="select_invertFaces" text="反选面" buttonText="反选面" target="mesh"/>
+		</menu>
+		<menu name="selectFilterMenu" text="过滤选择"  buttonText="过滤选择">
+			<menuItem name="select_filterVertices" text="过滤顶点选择" buttonText="过滤顶点" target="mesh"/>
+			<menuItem name="select_filterEdges" text="过滤边选择" buttonText="过滤边" target="mesh"/>	
+			<menuItem name="select_filterFaces" text="过滤面选择" buttonText="过滤面" target="mesh"/>
+		</menu>
+		<menu name="selectConvertMenu" text="转换选择"  buttonText="转换选择">
+				<menuItem name="select_toVertices" text="转换选择为顶点" buttonText="转顶点" target="mesh"/>
+				<menuItem name="select_toEdges" text="转换选择为边" buttonText="转边" target="mesh"/>
+				<menuItem name="select_toFaces" text="转换选择为面" buttonText="转面" target="mesh"/>
+			<menuSeparator/>
+				<menuItem name="select_toContainedEdges" text="转换选择为包含边" buttonText="转包含边" target="mesh"/>
+				<menuItem name="select_toContainedFaces" text="转换选择为包含面" buttonText="转包含面" target="mesh"/>
+		</menu>
+		<menuSeparator/>
+		<menu name="selectSymmetryMenu" text="选择对称"  buttonText="选对称">
+				<menuItem name="select_symmetryAll" text="选择对称" buttonText="选对称" target="mesh"/>
+				<menuItem name="select_symmetryVertices" text="选择对称顶点" buttonText="选对称顶点" target="mesh"/>
+				<menuItem name="select_symmetryEdges" text="选择对称边" buttonText="选对称边" target="mesh"/>	
+				<menuItem name="select_symmetryFaces" text="选择对称面" buttonText="选对称面" target="mesh"/>
+			<menuSeparator/>
+				<menuItem name="select_addSymmetryAll" text="添加对称到选择" buttonText="添加对称" target="mesh"/>
+				<menuItem name="select_addSymmetryVertices" text="添加对称顶点到选择" buttonText="添加对称顶点" target="mesh"/>
+				<menuItem name="select_addSymmetryEdges" text="添加对称边到选择" buttonText="添加对称边" target="mesh"/>	
+				<menuItem name="select_addSymmetryFaces" text="添加对称面到选择" buttonText="添加对称面" target="mesh"/>
+		</menu>
+		<menuSeparator/>
+		<menu name="selectShellMenu" text="顶点壳"  buttonText="顶点壳">
+				<menuItem name="select_shell" text="选择壳" buttonText="壳" target="mesh"/>
+				<menuItem name="select_addShellBorder" text="添加壳边界到选择" buttonText="添加边界" target="mesh"/>
+				<menuItem name="select_shellBorder" text="选择壳边界" buttonText="壳边界" target="mesh"/>	
+				<menuItem name="select_deselectShellBorder" text="取消选择壳边界" buttonText="去壳边界" target="mesh"/>
+		</menu>
+		<menuSeparator/>
+		<menu name="selectGrowMenu" text="扩大选择"  buttonText="扩大选择">
+			<menuItem name="select_grow" text="扩大选择" buttonText="扩大" target="mesh"/>	
+			<menuItem name="select_growVertices" text="扩大顶点选择" buttonText="扩大顶点" target="mesh"/>	
+			<menuItem name="select_growEdges" text="扩大边选择" buttonText="扩大边" target="mesh"/>
+			<menuItem name="select_growFaces" text="扩大面选择" buttonText="扩大面" target="mesh"/>
+		</menu>
+		<menu name="selectShrinkMenu" text="收缩选择"  buttonText="收缩选择">
+			<menuItem name="select_shrink" text="收缩选择" buttonText="收缩" target="mesh"/>	
+			<menuItem name="select_shrinkVertices" text="收缩顶点选择" buttonText="收缩顶点" target="mesh"/>	
+			<menuItem name="select_shrinkEdges" text="收缩边选择" buttonText="收缩边" target="mesh"/>
+			<menuItem name="select_shrinkFaces" text="收缩面选择" buttonText="收缩面" target="mesh"/>
+		</menu>
+		<menuSeparator/>
+			<menuItem name="select_ring" text="选择边环" buttonText="环" target="mesh"/>
+			<menuItem name="select_loop" text="选择边循环" buttonText="循环" target="mesh"/>
+			<menuItem name="select_pathDistance" text="按距离选择边路径" buttonText="路径距离" target="mesh"/>
+			<menuItem name="select_pathEdges" text="按步数选择边路径" buttonText="路径步数" target="mesh"/>
+</menu>
+
+
+<menu name="modifyMeshMenu" text="修改"  buttonText="修改">
+		<menuItem name="modify_forceRefresh" text="强制刷新" buttonText="强制刷新" target="mesh"/>
+	<menuSeparator/>
+		<menu name="modifySubdivideMenu" text="细分"  buttonText="细分">	
+			<menuItem name="modify_subdivide" text="全部细分" buttonText="细分" target="mesh"/>
+			<menuItem name="modify_subdivideSelected" text="细分选中" buttonText="细分选中" target="mesh"/>
+			<menuCheckItem name="modify_subdivideConnectWithUnselected" text="与未选中连接" buttonText="连未选中" target="mesh"/>
+		</menu>
+		<menu name="modifyRelaxMenu" text="松弛"  buttonText="松弛">	
+			<menuItem name="modify_relax" text="松弛" buttonText="松弛" target="mesh"/>
+			<menuItem name="modify_relaxWithSelected" text="与选中一起松弛" buttonText="松弛选中" target="mesh"/>
+			<menuCheckItem name="modify_relaxPreserveBorders" text="保留边界" buttonText="保留边" target="mesh"/>
+		</menu>
+		<menu name="modifySymmetryMenu" text="对称"  buttonText="对称">
+				<menuItem name="modify_symmetryCreate" text="创建对称" buttonText="创建对称" target="mesh"/>
+				<menuItem name="modify_symmetryFlip" text="翻转对称" buttonText="翻转对称" target="mesh"/>
+				<menuItem name="modify_symmetryAdjust" text="调整对称" buttonText="调整对称" target="mesh"/>
+				<menuItem name="modify_symmetryDelete" text="删除对称" buttonText="删对称" target="mesh"/>
+				<menuItem name="modify_symmetryZero" text="对称归零吸附" buttonText="归零对称" target="mesh"/>
+			<menuSeparator/>
+				<menuCheckItem name="modify_symmetryConformAfter" text="对称后贴合" buttonText="保留边" target="mesh"/>
+			<menuSeparator/>
+				<menuItem name="modify_splitBySymmetryPlane" text="按选中对称平面分割" buttonText="平面分割" target="mesh"/>
+				<menuCheckItem name="modify_splitBySymmetryPlaneForceFaces" text="对称分割强制面" buttonText="强制面" target="mesh"/>
+		</menu>
+		<menu name="modifyVerticesMenu" text="修改顶点"  buttonText="顶点">
+				<menuItem name="modify_mergeVertices" text="合并顶点" buttonText="合并" target="mesh"/>
+			<menuSeparator/>
+				<menuItem name="modify_grabVertices" text="抓取顶点" buttonText="抓取" target="mesh"/>
+				<menuRadioItem name="modify_grabVerticesInitial" text="抓取初始位置" buttonText="初始" group="grabType" target="mesh"/>
+				<menuRadioItem name="modify_grabVerticesMiddle" text="抓取中间位置" buttonText="中间" group="grabType" target="mesh"/>
+				<menuRadioItem name="modify_grabVerticesGrabbed" text="抓取已抓位置" buttonText="已抓取" group="grabType" target="mesh"/>
+			<menuSeparator/>
+				<menuItem name="modify_weldVertices" text="焊接顶点" buttonText="焊接" target="mesh"/>
+			<menuSeparator/>
+				<menuItem name="modify_bridge" text="桥接选中" buttonText="桥接选中" target="mesh"/>
+				<menuItem name="modify_bridgeWithClosest" text="与最近桥接" buttonText="桥接最近" target="mesh"/>
+			<menuSeparator/>
+				<menuItem name="modify_snap" text="吸附到参考顶点" buttonText="吸附参考" target="mesh"/>
+				<menuItem name="modify_straighten" text="拉直" buttonText="拉直" target="mesh"/>
+				<menuItem name="modify_inflate" text="膨胀" buttonText="膨胀" target="mesh"/>
+				<menuItem name="modify_conform" text="贴合" buttonText="贴合" target="mesh"/>
+		</menu>
+		<menu name="modifyEdgesMenu" text="修改边"  buttonText="边">
+				<menuItem name="modify_spin" text="旋转边" buttonText="旋转" target="mesh"/>
+				<menuItem name="modify_grabEdges" text="抓取边" buttonText="抓取" target="mesh"/>
+				<menuItem name="modify_collapse" text="塌陷边" buttonText="塌陷" target="mesh"/>
+			<menuSeparator/>
+				<menuItem name="modify_connect" text="连接边" buttonText="连接" target="mesh"/>
+				<menuItem name="modify_connectRing" text="连接环" buttonText="连接环" target="mesh"/>
+		</menu>
+	<menuSeparator/>		
+		<menuItem name="modify_reverseNormals" text="反转法线" buttonText="反转法线" target="mesh"/>
+		<menuItem name="modify_rebuildNormals" text="重建法线" buttonText="重建法线" target="mesh"/>
+	<menuSeparator/>
+		<menuItem name="modify_delete" text="删除几何体" buttonText="删除几何" target="mesh"/>
+		<menuItem name="modify_deleteEdges" text="删除边" buttonText="删除边" target="mesh"/>
+	<menuSeparator/>
+		<menuItem name="modify_unify" text="统一UV" buttonText="统一UV" target="mesh"/>
+</menu>
+
+
+<menu name="referenceMeshMenu" text="参考网格"  buttonText="参考">
+		<menuCheckItem name="reference_contour" text="显示轮廓" buttonText="轮廓" target="referencemesh"/>
+		<menuCheckItem name="reference_boundingBox" text="显示包围盒" buttonText="包围盒" target="referencemesh"/>
+	<menuSeparator/>
+		<menuCheckItem name="reference_useVertexColors" text="显示顶点色" buttonText="顶点色" target="referencemesh"/>
+		<menuCheckItem name="reference_useTexture" text="显示纹理" buttonText="纹理" target="referencemesh"/>
+	<menuSeparator/>
+		<menuCheckItem name="reference_smoothShade" text="平滑着色" buttonText="参考平滑着色" target="referencemesh"/>
+		<menuCheckItem name="reference_wireframe" text="显示线框" buttonText="参考线框" target="referencemesh"/>
+	<menuSeparator/>
+		<menu name="maskingMenu" text="遮罩"  buttonText="遮罩">
+				<menuCheckItem name="masking_showInViewport" text="显示遮罩" buttonText="显示遮罩" target="referencemesh"/>
+			<menuSeparator/>
+				<menuItem name="masking_invert" text="反相遮罩" buttonText="反相遮罩" target="referencemesh"/>
+				<menuItem name="masking_blur" text="模糊遮罩" buttonText="模糊遮罩" target="referencemesh"/>
+				<menuItem name="masking_clear" text="清除遮罩" buttonText="清除遮罩" target="referencemesh"/>
+		</menu>
+</menu>
+
+
+<menu name="optionsMenu" text="选项"  buttonText="选项">
+		<menuCheckItem name="symmetry" text="启用对称" buttonText="对称"/>
+		<menuCheckItem name="steadyMouse" text="稳定鼠标" buttonText="稳定鼠标"/>
+    <menuSeparator/>
+        <menuCheckItem name="showBorders" text="显示边界" buttonText="边界"/>
+		<menuCheckItem name="alwaysShowGuides" text="总是显示导向线" buttonText="导向线"/>
+	<menuSeparator/>
+		<menuCheckItem name="showGrid" text="显示网格" buttonText="网格"/>
+		<menuCheckItem name="backfaceCulling" text="背面剔除" buttonText="剔除"/>
+		<menuCheckItem name="meshesHiddenByReference" text="网格被参考隐藏" buttonText="网格参考可见"/>
+	<menuSeparator/>
+		<menuCheckItem name="seeThrough" text="透视" buttonText="透视"/>
+        <menuCheckItem name="alphaRender" text="透明渲染" buttonText="透明渲染"/>
+        <menuCheckItem name="smoothShade" text="平滑着色" buttonText="平滑着色"/>
+	<menuSeparator/>
+        <menuCheckItem name="wireframe" text="仅线框" buttonText="线框"/>
+		<menuCheckItem name="wireframeMesh" text="网格上线框" buttonText="线框"/>
+		
+		
+</menu>
+
+
+<menu name="viewMenu" text="视图"  buttonText="视图">
+		<menuItem name="isolateSelection" text="隔离选中" buttonText="隔离选中"/>
+		<menuItem name="showAll" text="显示全部" buttonText="显示全部"/>
+		<menuItem name="showAllGroups" text="显示所有组" buttonText="显示所有组"/>
+		<menuItem name="centerSelection" text="居中选中" buttonText="居中"/>
+	<menuSeparator/>
+		<menuItem name="frameSelection" text="框选选中" buttonText="框选选中"/>
+		<menuItem name="frameAll" text="框选全部" buttonText="框选全部"/>
+	<menuSeparator/>
+		<menuItem name="clearLog" text="清除日志窗口" buttonText="清除日志"/>
+	<menuSeparator/>
+		<menuCheckItem name="showToolbar" text="显示工具栏" buttonText="工具栏"/>
+		<menuCheckItem name="keepToolbarsInFullscreen" text="全屏显示工具栏" buttonText="保留工具栏"/>
+	<menuSeparator/>
+		<menuCheckItem name="sceneView" text="场景视图" buttonText="场景" toolTip="显示场景视图"/>
+		<menuCheckItem name="inspectorView" text="检查器视图" buttonText="检查器" toolTip="显示检查器视图"/>
+		<menuCheckItem name="bakeView" text="烘焙贴图视图" buttonText="烘焙" toolTip="显示烘焙贴图视图"/>
+		<menuCheckItem name="logView" text="日志视图" buttonText="日志" toolTip="显示日志视图"/>
+		<menuCheckItem name="toolOptionsView" text="工具选项视图" buttonText="工具选项" toolTip="显示工具选项视图"/>
+		<menuCheckItem name="symmetryOptionsView" text="对称选项视图" buttonText="对称选项" toolTip="显示对称选项视图"/>
+		<menuCheckItem name="historyView" text="历史视图" buttonText="历史" toolTip="显示历史视图"/>
+	<menuSeparator/>
+		<menuItem name="turntable" text="创建转盘动画" buttonText="转盘"/>
+		<menuCheckItem name="showKeys" text="显示键盘和鼠标输入" buttonText="显示输入"/>
+</menu>
+
+<menu name="helpMenu" text="帮助"  buttonText="帮助">
+	<menuItem name="showHelp" text="在线帮助" buttonText="帮助" toolTip="在线帮助"/>
+	<menuItem name="licenseManager" text="许可证管理器" buttonText="许可证" toolTip="显示许可证管理器"/>
+	<menuItem name="about" text="关于" buttonText="关于"/>
+	
+</menu>
+

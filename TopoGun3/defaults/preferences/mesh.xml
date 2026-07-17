@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<property name="draftSize" type="float" value="5"/>
+<property name="vertexSize" type="float" value="5"/>
+<property name="borderVertexSize" type="float" value="8"/>
+<property name="edgeWidth" type="float" value="1"/>
+<property name="borderEdgeWidth" type="float" value="3"/>
+<property name="vertexColor" type="color" red="70" green="150" blue="255" alpha="255"/>
+<property name="borderVertexColor" type="color" red="70" green="150" blue="255" alpha="255"/>
+<property name="selectedVertexColor" type="color" red="255" green="255" blue="0" alpha="255"/>
+<property name="inactiveVertexColor" type="color" red="100" green="100" blue="100" alpha="100"/>
+<property name="edgeColor" type="color" red="0" green="0" blue="0" alpha="255"/>
+<property name="borderEdgeColor" type="color" red="0" green="0" blue="0" alpha="255"/>
+<property name="selectedEdgeColor" type="color" red="255" green="255" blue="255" alpha="255"/>
+<property name="inactiveEdgeColor" type="color" red="100" green="100" blue="100" alpha="170"/>
+<property name="alphaMeshColor" type="color" red="25" green="25" blue="27" alpha="130"/>
+<property name="selectedAlphaMeshColor" type="color" red="255" green="170" blue="36" alpha="130"/>
+<property name="inactiveAlphaMeshColor" type="color" red="20" green="20" blue="23" alpha="70"/>
+<property name="meshColor" type="color" red="130" green="130" blue="140" alpha="255"/>
+<property name="inactiveMeshColor" type="color" red="100" green="100" blue="110" alpha="255"/>
+<property name="selectedMeshColor" type="color" red="255" green="170" blue="36" alpha="255"/>
+<property name="meshSpecularColor" type="color" red="30" green="30" blue="35" alpha="110"/>
+<property name="vertexAlpha" type="float" value="1.0"/>
+<property name="edgeAlpha" type="float" value="1.0"/>
+<property name="rejectInner" type="bool" value="true"/>

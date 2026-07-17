@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>307</width>
+    <height>418</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>200</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>499</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>170</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>窗体</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>6</number>
+   </property>
+   <property name="topMargin">
+    <number>6</number>
+   </property>
+   <property name="rightMargin">
+    <number>6</number>
+   </property>
+   <property name="bottomMargin">
+    <number>6</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QCheckBox" name="mesh_showNormals">
+       <property name="toolTip">
+        <string>切换网格法线向量的显示。</string>
+       </property>
+       <property name="text">
+        <string>法线</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="mesh_normalsSize">
+       <property name="toolTip">
+        <string>设置法线向量显示大小。</string>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="value">
+        <number>50</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="spacing">
+      <number>1</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="modify_clear">
+       <property name="toolTip">
+        <string>从当前所选网格中删除所有几何体。</string>
+       </property>
+       <property name="text">
+        <string>清除几何体</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mesh_duplicate">
+       <property name="toolTip">
+        <string>复制所选网格并将其置于当前激活的参考网格之下。</string>
+       </property>
+       <property name="text">
+        <string>复制网格</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <property name="spacing">
+      <number>1</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="modify_copyGeometry">
+       <property name="toolTip">
+        <string>将所选几何体元素复制到剪贴板。</string>
+       </property>
+       <property name="text">
+        <string>复制</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="modify_cutGeometry">
+       <property name="toolTip">
+        <string>将所选几何体元素复制到剪贴板，随后删除所选元素。</string>
+       </property>
+       <property name="text">
+        <string>切割</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="modify_pasteGeometry">
+       <property name="toolTip">
+        <string>若剪贴板中有复制/剪切的几何体，则将其复制到所选网格。</string>
+       </property>
+       <property name="text">
+        <string>粘贴</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>1</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="mesh_export">
+       <property name="toolTip">
+        <string>将所选网格导出为3D文件。</string>
+       </property>
+       <property name="text">
+        <string>导出</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mesh_export_back">
+       <property name="toolTip">
+        <string>将所选网格导出回其加载自的文件。原文件会被自动覆盖。</string>
+       </property>
+       <property name="text">
+        <string>导出回原处</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <property name="spacing">
+      <number>1</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="mesh_reload">
+       <property name="toolTip">
+        <string>从磁盘重新加载所选网格（前提是它之前是从磁盘加载的）。</string>
+       </property>
+       <property name="text">
+        <string>重新加载</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mesh_delete">
+       <property name="toolTip">
+        <string>从场景中删除网格。</string>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="modify_forceRefresh">
+     <property name="toolTip">
+      <string>重建所选顶点周围的面。有时TopoGun无法创建朝向正确的面（会出现法线翻转、看起来像网格破洞的面）。出现此问题时执行此命令可修复朝向错误的面。</string>
+     </property>
+     <property name="text">
+      <string>强制刷新</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>10</width>
+       <height>4</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

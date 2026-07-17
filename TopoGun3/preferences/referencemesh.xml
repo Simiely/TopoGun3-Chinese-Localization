@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<property name="referenceColor" type="color" red="210" green="210" blue="210" alpha="255"/>
+<property name="referenceColorSelectedGroup" type="color" red="250" green="250" blue="250" alpha="255"/>
+<property name="referenceColorInactive" type="color" red="150" green="150" blue="150" alpha="255"/>
+<property name="referenceColorSpecular" type="color" red="30" green="30" blue="35" alpha="110"/>
+<property name="referenceColorOutline" type="color" red="255" green="150" blue="90" alpha="255"/>
+<property name="referenceWireframeColor" type="color" red="120" green="120" blue="120" alpha="255"/>

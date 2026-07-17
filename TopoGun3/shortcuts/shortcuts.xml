@@ -1,0 +1,357 @@
+<?xml version="1.0" ?>
+
+<group name="fileMenu" text="文件菜单">
+	<shortcut name="newScene" text="新建场景" key="Ctrl+N"/>
+	<shortcut name="loadScene" text="加载场景" key="Ctrl+O"/>
+	<shortcut name="loadMesh" text="加载网格" key="Ctrl+Alt+O"/>
+	<shortcut name="reloadMesh" text="重新加载网格" key="Alt+Shift+O"/>
+	<shortcut name="loadReference" text="加载参考网格" key="Ctrl+Shift+O"/>
+	<shortcut name="reloadReference" text="重新加载参考网格"/>
+	<shortcut name="saveScene" text="保存场景" key="Ctrl+S"/>
+	<shortcut name="saveSceneAs" text="场景另存为" key="Ctrl+Shift+S"/>
+	<shortcut name="exportMesh" text="导出网格" key="Ctrl+E"/>
+	<shortcut name="exportMeshBack" text="导出网格回原处" key="Alt+Shift+E"/>
+	<shortcut name="exportAllMeshesBack" text="导出所有网格回原处"/>
+	<shortcut name="exportReference" text="导出参考网格" key="Ctrl+Shift+E"/>
+	<shortcut name="quit" text="退出" key="Ctrl+Q"/>
+</group>
+
+<group name="editMenu" text="编辑菜单">
+	<shortcut name="undo" text="撤销" key="Ctrl+Z"/>
+	<shortcut name="redo" text="重做" key="Ctrl+Shift+Z"/>
+	<shortcut name="clearHistory" text="清除历史"/>
+    <shortcut name="repeatLast" text="重复上一个" key="G"/>
+	<shortcut name="saveLayout" text="保存界面"/>
+	<shortcut name="resetLayout" text="重置界面"/>
+	<shortcut name="hotkeys" text="键盘快捷键"/>
+	<shortcut name="preferences" text="首选项" key="Ctrl+,"/>
+</group>
+
+<group name="meshMenu" text="网格菜单">
+    <shortcut name="createMesh" text="创建网格"/>
+    <shortcut name="mergeVisible" text="合并可见" key="Ctrl+Shift+M"/>
+	<shortcut name="clearMesh" text="清除几何体"/>
+	<shortcut name="duplicateMesh" text="复制网格"/>
+    <shortcut name="copyGeometry" text="复制几何体"  key="Ctrl+C"/>
+	<shortcut name="cutGeometry" text="切割几何体"  key="Ctrl+X"/>
+    <shortcut name="pasteGeometry" text="粘贴几何体"  key="Ctrl+V"/>
+</group>
+
+<group name="selectMenu" text="选择菜单">
+	<shortcut name="selectParent" text="选择父级" key="Ctrl+P"/>
+	<shortcut name="select_selectAll" text="全选" key="Ctrl+A"/>
+	<shortcut name="select_deselectAll" text="全不选" key="Ctrl+Alt+A"/>
+	<shortcut name="select_invertAll" text="反选选择" key="Ctrl+Shift+A"/>
+	<shortcut name="select_selectVertices" text="选择所有顶点"/>
+	<shortcut name="select_selectEdges" text="选择所有边"/>
+	<shortcut name="select_selectFaces" text="选择所有面"/>
+	<shortcut name="select_triangles" text="选择所有三角形"/>
+	<shortcut name="select_deselectVertices" text="取消选择顶点"/>
+	<shortcut name="select_deselectEdges" text="取消选择边"/>
+	<shortcut name="select_deselectFaces" text="取消选择面"/>
+	<shortcut name="select_invertVertices" text="反选顶点"/>
+	<shortcut name="select_invertEdges" text="反选边"/>
+	<shortcut name="select_invertFaces" text="反选面"/>
+	<shortcut name="select_filterVertices" text="筛选顶点选择"/>
+	<shortcut name="select_filterEdges" text="筛选边选择"/>
+	<shortcut name="select_filterFaces" text="筛选面选择"/>
+	<shortcut name="select_toVertices" text="将选择转为顶点"/>
+	<shortcut name="select_toEdges" text="将选择转为边"/>
+	<shortcut name="select_toFaces" text="将选择转为面"/>
+	<shortcut name="select_toContainedEdges" text="将选择转为包含边"/>
+	<shortcut name="select_toContainedFaces" text="将选择转为包含面"/>
+	<shortcut name="select_symmetryAll" text="选择对称"/>
+	<shortcut name="select_symmetryVertices" text="选择对称顶点"/>
+	<shortcut name="select_symmetryEdges" text="选择对称边"/>
+	<shortcut name="select_symmetryFaces" text="选择对称面"/>
+	<shortcut name="select_addSymmetryAll" text="将对称添加到选择"/>
+	<shortcut name="select_addSymmetryVertices" text="将对称顶点添加到选择"/>
+	<shortcut name="select_addSymmetryEdges" text="将对称边添加到选择"/>
+	<shortcut name="select_addSymmetryFaces" text="将对称面添加到选择"/>
+	<shortcut name="select_shell" text="选择壳"/>
+	<shortcut name="select_addShellBorder" text="将壳边界添加到选择"/>
+	<shortcut name="select_shellBorder" text="选择壳边界"/>
+	<shortcut name="select_deselectShellBorder" text="取消选择壳边界"/>
+	<shortcut name="select_grow" text="扩展选择"/>
+	<shortcut name="select_growVertices" text="扩展顶点选择"/>
+	<shortcut name="select_growEdges" text="扩展边选择"/>
+	<shortcut name="select_growFaces" text="扩展面选择"/>
+	<shortcut name="select_shrink" text="收缩选择"/>
+	<shortcut name="select_shrinkVertices" text="收缩顶点选择"/>
+	<shortcut name="select_shrinkEdges" text="收缩边选择"/>
+	<shortcut name="select_shrinkFaces" text="收缩面选择"/>
+	<shortcut name="select_ring" text="选择边环"/>
+	<shortcut name="select_loop" text="选择边循环"/>
+	<shortcut name="select_pathDistance" text="按距离选择边路径"/>
+	<shortcut name="select_pathEdges" text="按步数选择边路径"/>
+</group>
+
+<group name="modifyMenu" text="修改菜单">
+	<shortcut name="modify_forceRefresh" text="强制刷新" key="Ctrl+R"/>
+	<shortcut name="modify_subdivide" text="全部细分"/>
+	<shortcut name="modify_subdivideSelected" text="细分选中"/>
+	<shortcut name="modify_subdivideConnectWithUnselected" text="与未选中连接"/>
+	<shortcut name="modify_relax" text="松弛"/>
+	<shortcut name="modify_relaxWithSelected" text="与选中一起松弛"/>
+	<shortcut name="modify_relaxPreserveBorders" text="保留边界"/>
+	<shortcut name="modify_symmetryCreate" text="创建对称"/>
+	<shortcut name="modify_symmetryAdjust" text="调整对称"/>
+	<shortcut name="modify_symmetryDelete" text="删除对称"/>
+	<shortcut name="modify_symmetryZero" text="对称归零吸附"/>
+	<shortcut name="modify_symmetryConformAfter" text="对称吸附后贴合"/>
+	<shortcut name="modify_splitBySymmetryPlane" text="按选中的对称平面分割"/>
+	<shortcut name="modify_splitBySymmetryPlaneForceFaces" text="对称分割强制生成面"/>
+	<shortcut name="modify_mergeVertices" text="合并顶点"/>
+	<shortcut name="modify_grabVertices" text="抓取顶点"/>
+	<shortcut name="modify_grabVerticesInitial" text="抓取初始位置"/>
+	<shortcut name="modify_grabVerticesMiddle" text="抓取中间位置"/>
+	<shortcut name="modify_grabVerticesGrabbed" text="抓取已抓取位置"/>
+	<shortcut name="modify_weldVertices" text="焊接顶点"/>
+	<shortcut name="modify_bridge" text="桥接选中"/>
+	<shortcut name="modify_bridgeWithClosest" text="与最近桥接"/>
+	<shortcut name="modify_snap" text="吸附到参考顶点"/>
+	<shortcut name="modify_straighten" text="拉直"/>
+	<shortcut name="modify_inflate" text="膨胀"/>
+	<shortcut name="modify_conform" text="贴合"/>
+	<shortcut name="modify_spin" text="自旋边"/>
+	<shortcut name="modify_grabEdges" text="抓取边"/>
+	<shortcut name="modify_collapse" text="塌陷边"/>
+	<shortcut name="modify_connect" text="连接边"/>
+	<shortcut name="modify_connectRing" text="连接环"/>
+	<shortcut name="modify_reverseNormals" text="反转法线"/>
+	<shortcut name="modify_rebuildNormals" text="重建法线"/>
+	<shortcut name="modify_delete" text="删除几何体"/>
+	<shortcut name="modify_deleteEdges" text="删除边"/>
+	<shortcut name="modify_unify" text="统一 UV"/>
+</group>
+
+<group name="referenceMeshMenu" text="参考网格菜单">
+	<shortcut name="reference_contour" text="显示轮廓"/>
+	<shortcut name="reference_boundingBox" text="显示边界框"/>
+	<shortcut name="reference_useVertexColors" text="显示顶点颜色"/>
+	<shortcut name="reference_useTexture" text="显示纹理"/>
+	<shortcut name="reference_smoothShade" text="平滑着色"/>
+	<shortcut name="reference_wireframe" text="显示线框"/>
+	<shortcut name="masking_showInViewport" text="显示遮罩"/>
+	<shortcut name="masking_invert" text="反转遮罩"/>
+	<shortcut name="masking_blur" text="模糊遮罩"/>
+	<shortcut name="masking_clear" text="清除遮罩"/>
+</group>
+
+<group name="optionsMenu" text="选项菜单">
+	<shortcut name="symmetry" text="启用对称" key="X"/>
+	<shortcut name="steadyMouse" text="稳定鼠标"  key="F8"/>
+	<shortcut name="showBorders" text="显示边界"/>
+    <shortcut name="alwaysShowGuides" text="始终显示参考线"/>
+    <shortcut name="showGrid" text="显示网格"/>
+	<shortcut name="backfaceCulling" text="背面剔除"/>
+	<shortcut name="meshesHiddenByReference" text="被参考隐藏的网格"/>
+	<shortcut name="seeThrough" text="透视显示" key="F5"/>
+    <shortcut name="alphaRender" text="透明渲染" key="F6"/>
+	<shortcut name="smoothShade" text="平滑着色" key="F7"/>
+    <shortcut name="wireframe" text="仅线框" key="F9"/>
+	<shortcut name="wireframeMesh" text="网格上线框" key="F10"/>
+</group>
+
+<group name="viewMenu" text="视图菜单">
+	<shortcut name="isolateSelection" text="隔离选中" key="Shift+F"/>
+	<shortcut name="showAll" text="显示全部" key="Shift+A"/>
+	<shortcut name="showAllGroups" text="显示所有组" key="Shift+G"/>
+	<shortcut name="centerSelection" text="居中选中" key="Alt+C"/>
+	<shortcut name="frameSelection" text="框显选中" key="F"/>
+	<shortcut name="frameAll" text="框显全部" key="A"/>
+	<shortcut name="clearLog" text="清除日志窗口"/>
+	<shortcut name="showToolbar" text="显示工具栏" key="Ctrl+T"/>
+	<shortcut name="keepToolbarsInFullscreen" text="全屏时显示工具栏"/>
+	<shortcut name="sceneView" text="场景视图" key="S"/>
+	<shortcut name="inspectorView" text="检查器视图" key="I"/>
+	<shortcut name="bakeView" text="烘焙贴图视图"/>
+	<shortcut name="logView" text="日志视图"/>
+	<shortcut name="toolOptionsView" text="工具选项视图"/>
+	<shortcut name="symmetryOptionsView" text="对称选项视图"/>
+	<shortcut name="historyView" text="历史视图"/>
+	<shortcut name="turntable" text="创建旋转台动画"/>
+	<shortcut name="showKeys" text="显示键盘与鼠标输入"/>
+</group>
+
+<group name="helpMenu" text="帮助菜单">
+	<shortcut name="showHelp" text="帮助" key="F1"/>
+	<shortcut name="licenseManager" text="许可证管理器"/>
+	<shortcut name="about" text="关于"/>
+</group>
+
+<group name="editTool" text="编辑工具" toolName="SimpleEdit" key="E">
+	<shortcut name="simpleEdit_backFaces" text="背面"/>
+	<shortcut name="simpleEdit_selectVerticesOnly" text="启用顶点选择" key="1"/>
+	<shortcut name="simpleEdit_selectEdgesOnly" text="启用边选择" key="2"/>
+	<shortcut name="simpleEdit_selectFacesOnly" text="启用面选择" key="3"/>
+	<shortcut name="simpleEdit_selectVertices" text="切换顶点选择" key="Shift+1"/>
+	<shortcut name="simpleEdit_selectEdges" text="切换边选择" key="Shift+2"/>
+	<shortcut name="simpleEdit_selectFaces" text="切换面选择" key="Shift+3"/>
+	<shortcut name="simpleEdit_transform" text="变换" key="Shift+T"/>
+	<shortcut name="simpleEdit_negativeScale" text="负向缩放"/>
+	<shortcut name="simpleEdit_symTransform" text="对称变换"/>
+	<shortcut name="simpleEdit_symSelect" text="对称选择"/>
+	<shortcut name="simpleEdit_softSelect" text="软选择"/>
+	<shortcut name="simpleEdit_excludeSym" text="排除对称"/>
+	<shortcut name="simpleEdit_selectModeRectangle" text="矩形框选"/>
+	<shortcut name="simpleEdit_selectModeCircle" text="圆形框选"/>
+	<shortcut name="simpleEdit_selectModeLasso" text="套索框选"/>
+	<shortcut name="simpleEdit_selectModeBrush" text="笔刷选择"/>
+	<shortcut name="simpleEdit_increaseManipulator" text="增大操纵器大小" key="+"/>
+	<shortcut name="simpleEdit_decreaseManipulator" text="减小操纵器大小" key="Shift+-"/>
+</group>
+
+<group name="createTool" text="创建工具" toolName="SimpleCreate" key="C">
+	<shortcut name="simpleCreate_makeFaces" text="生成面" key="Ctrl+F"/>
+    <shortcut name="simpleCreate_autoSelect" text="自动选择"/>
+	<shortcut name="simpleCreate_intersectedSplitEdge" text="不移动分割边顶点"/>
+</group>
+
+<group name="drawTool" text="绘制工具" toolName="Draw" key="D">
+	<shortcut name="draw_preview" text="预览" key="Shift+P"/>
+	<shortcut name="draw_apply" text="创建几何体" key="Shift+C"/>
+	<shortcut name="draw_clearAll" text="全部清除" key="Shift+R"/>
+	<shortcut name="draw_line" text="线模式"/>
+	<shortcut name="draw_loft" text="放样模式"/>
+	<shortcut name="draw_sweep" text="扫描模式"/>
+	<shortcut name="draw_setLine" text="设置线"/>
+	<shortcut name="draw_setLoft" text="设置放样"/>
+	<shortcut name="draw_setSweep" text="设置扫描"/>
+	<shortcut name="draw_autoInvert" text="自动反转"/>
+	<shortcut name="draw_forceStartEnd" text="强制首尾顶点"/>
+	<shortcut name="draw_smooth" text="平滑"/>
+	<shortcut name="draw_clearSelected" text="清除选中"/>
+	<shortcut name="draw_mirror" text="镜像线"/>
+	<shortcut name="draw_close" text="闭合线"/>
+	<shortcut name="draw_cut" text="切割线"/>
+	<shortcut name="draw_invert" text="反转线"/>
+	<shortcut name="draw_intersect" text="相交线"/>
+	<shortcut name="draw_weld" text="焊接线"/>
+	<shortcut name="draw_projectOnSymmetryPlane" text="投影线到对称平面"/>
+</group>
+
+<group name="bridgeTool" text="桥接工具" toolName="Bridge" key="Shift+B">
+	<shortcut name="bridge_edges" text="边模式" key="1"/>
+	<shortcut name="bridge_faces" text="面模式" key="2"/>
+	<shortcut name="bridge_line" text="线条模式" key="3"/>
+	<shortcut name="bridge_straightLine" text="直线模式" key="4"/>
+</group>
+
+<group name="slideTool" text="滑动工具" toolName="Slide" key="Alt+Shift+S">
+	<shortcut name="slide_xRay" text="透视显示"/>
+</group>
+
+<group name="tubesTool" text="管道工具" toolName="Tubes" key="T">
+	<shortcut name="tubes_create" text="创建几何体" key="Shift+C"/>
+	<shortcut name="tubes_reset" text="重置" key="Shift+R"/>
+	<shortcut name="tubes_invert" text="反转上一个"/>
+	<shortcut name="tubes_undo" text="清除上一个"/>
+    <shortcut name="tubes_precise" text="精确模式"/>
+	<shortcut name="tubes_xRay" text="透视显示"/>
+</group>
+
+<group name="brushTool" text="笔刷工具" toolName="BrushEdit" key="B">
+	<shortcut name="brushEdit_useSelection" text="使用选择"/>
+	<shortcut name="brushEdit_keepBorder" text="保留边界"/>
+	<shortcut name="brushEdit_backfaces" text="背面"/>
+	<shortcut name="brushEdit_useTablet" text="使用数位板"/>
+	<shortcut name="brushEdit_move" text="移动模式"/>
+	<shortcut name="brushEdit_relax" text="松弛模式"/>
+	<shortcut name="brushEdit_inflate" text="膨胀模式"/>
+	<shortcut name="brushEdit_standard" text="标准模式"/>
+	<shortcut name="brushEdit_screenProject" text="屏幕投影模式"/>
+	<shortcut name="brushEdit_conform" text="贴合模式"/>
+	<shortcut name="brushEdit_select" text="选择模式"/>
+</group>
+
+<group name="extrudeTool" text="挤出工具" toolName="Extrude" key="Shift+E">
+	<shortcut name="extrude_crawl" text="爬行模式" key="1"/>
+	<shortcut name="extrude_project" text="向后投影模式" key="2"/>
+	<shortcut name="extrude_free" text="自由移动模式" key="3"/>
+</group>
+
+<group name="sliceTool" text="切片工具" toolName="Slice" key="Shift+S">
+	<shortcut name="slice_extended" text="扩展切片"/>
+	<shortcut name="slice_deep" text="深度切片"/>
+	<shortcut name="slice_forceFaces" text="强制生成面"/>
+</group>
+
+<group name="cutTool" text="切割工具" toolName="Cut" key="Ctrl+Shift+C">
+	<shortcut name="circle_createGeometry" text="创建几何体" key="Shift+C"/>
+	<shortcut name="cut_reset" text="重置" key="Shift+R"/>
+	<shortcut name="cut_undo" text="删除上一个"/>
+	<shortcut name="cut_lines" text="线条模式" key="1"/>
+	<shortcut name="cut_freeHand" text="自由绘制模式" key="2"/>
+	<shortcut name="cut_quads" text="生成四边形"/>
+	<shortcut name="cut_relax" text="松弛角点"/>
+	<shortcut name="cut_xRay" text="透视显示"/>
+</group>
+
+<group name="circleTool" text="圆形工具" toolName="Circle" key="Shift+Alt+C">
+	<shortcut name="cut_cut" text="切割几何体" key="Shift+C"/>
+	<shortcut name="circle_reset" text="重置" key="Shift+R"/>
+	<shortcut name="circle_invert" text="反向绘制"/>
+	<shortcut name="circle_enableGeo" text="启用几何体"/>
+</group>
+
+<group name="shellTool" text="壳工具" toolName="Shell" key="U">
+	<shortcut name="shell_createGeometry" text="创建几何体" key="Shift+C"/>
+	<shortcut name="shell_reset" text="重置" key="Shift+R"/>
+	<shortcut name="shell_uniform" text="均匀厚度"/>
+	<shortcut name="cut_xRay" text="透视显示"/>
+</group>
+
+<group name="patchTool" text="面片工具" toolName="Patch" key="P">
+	<shortcut name="patch_createGeometry" text="创建几何体" key="Shift+C"/>
+	<shortcut name="patch_clearAll" text="全部清除" key="Shift+R"/>
+	<shortcut name="patch_prevPattern" text="上一个样式"/>
+	<shortcut name="patch_enablePolygon" text="启用多边形"/>
+	<shortcut name="patch_nextPattern" text="下一个样式"/>
+	<shortcut name="patch_fromSelected" text="默认细分"/>
+	<shortcut name="patch_quads" text="优化为四边形"/>
+	<shortcut name="patch_freeHand" text="徒手模式"/>
+	<shortcut name="patch_straightLines" text="直线模式"/>
+	<shortcut name="patch_addGeometryLine" text="添加几何线" key="Ctrl+Shift+G"/>
+	<shortcut name="patch_allowTriangles" text="添加几何线"/>
+	<shortcut name="patch_allowGeometryLines" text="允许几何线"/>
+	<shortcut name="patch_projectGeometry" text="贴合几何体"/>
+	<shortcut name="patch_alwaysShow" text="始终显示线"/>
+	<shortcut name="patch_projectLines" text="贴合直线"/>
+	<shortcut name="patch_screenProject" text="屏幕投影"/>
+	<shortcut name="patch_smooth" text="平滑"/>
+	<shortcut name="patch_clearSelected" text="清除选中"/>
+	<shortcut name="patch_clearUnconnected" text="清除未连接"/>
+	<shortcut name="patch_close" text="闭合线"/>
+	<shortcut name="patch_cut" text="切割线"/>
+	<shortcut name="patch_intersect" text="相交线"/>
+	<shortcut name="patch_weld" text="焊接线"/>
+	<shortcut name="patch_projectOnSymmetryPlane" text="投影线到对称平面"/>
+	<shortcut name="patch_mirror" text="镜像线"/>
+    <shortcut name="patch_loft" text="放样模式"/>
+    <shortcut name="patch_loftAllowGeometryLines" text="允许放样几何线"/>
+    <shortcut name="patch_loftAuto" text="自动放样细分"/>
+    <shortcut name="patch_loftAutoFromFirst" text="仅从第一条线"/>
+    <shortcut name="patch_loftConstrain" text="约束放样边"/>
+    <shortcut name="patch_loftSetDivs" text="放样细分"/>
+</group>
+
+<group name="maskTool" text="遮罩工具" toolName="ReferenceMask" key="M">
+	<shortcut name="referenceMask_useTablet" text="使用数位板"/>
+	<shortcut name="referenceMask_invert" text="反转"/>
+	<shortcut name="referenceMask_blur" text="模糊"/>
+	<shortcut name="referenceMask_clear" text="清除"/>
+</group>
+
+<group name="guidesTool" text="参考线工具" toolName="ReferenceGuides" key="Ctrl+G">
+	<shortcut name="referenceGuides_clearAll" text="全部清除" key="Shift+R"/>
+	<shortcut name="referenceGuides_smooth" text="平滑"/>
+	<shortcut name="referenceGuides_alwaysShow" text="始终显示线"/>
+	<shortcut name="referenceGuides_clearSelected" text="清除选中"/>
+	<shortcut name="referenceGuides_mirror" text="镜像线"/>
+	<shortcut name="referenceGuides_close" text="闭合线"/>
+	<shortcut name="referenceGuides_cut" text="切割线"/>
+	<shortcut name="referenceGuides_intersect" text="相交线"/>
+	<shortcut name="referenceGuides_weld" text="焊接线"/>
+	<shortcut name="referenceGuides_projectOnSymmetryPlane" text="投影线到对称平面"/>
+</group>

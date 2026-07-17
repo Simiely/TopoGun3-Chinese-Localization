@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>248</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>窗体</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>6</number>
+   </property>
+   <property name="topMargin">
+    <number>6</number>
+   </property>
+   <property name="rightMargin">
+    <number>6</number>
+   </property>
+   <property name="bottomMargin">
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QCheckBox" name="simpleEdit_backFaces">
+     <property name="toolTip">
+      <string>允许选择背面元素。</string>
+     </property>
+     <property name="text"><string>背面</string></property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text"><string>选择</string></property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QCheckBox" name="simpleEdit_selectVertices">
+       <property name="toolTip">
+        <string>切换顶点选择模式。默认快捷键为Shift+1。按1键（不带Shift）可启用顶点选择模式并禁用另外两种选择模式。</string>
+       </property>
+       <property name="text"><string>顶点</string></property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="simpleEdit_selectEdges">
+       <property name="toolTip">
+        <string>切换边选择模式。默认快捷键为Shift+2。按2键（不带Shift）可启用边选择模式并禁用另外两种选择模式。</string>
+       </property>
+       <property name="text"><string>边</string></property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="simpleEdit_selectFaces">
+       <property name="toolTip">
+        <string>切换面选择模式。默认快捷键为Shift+3。按3键（不带Shift）可启用面选择模式并禁用另外两种选择模式。</string>
+       </property>
+       <property name="text"><string>面</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QCheckBox" name="simpleEdit_transform">
+       <property name="toolTip">
+        <string>切换变换gizmo。在变换模式激活时，你可以移动、旋转和缩放所选元素。每次变换后，与所选元素相连的顶点会被投影回参考网格表面。</string>
+       </property>
+       <property name="text"><string>变换</string></property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="simpleEdit_negativeScale">
+       <property name="toolTip">
+        <string>在变换模式下允许负缩放。</string>
+       </property>
+       <property name="text"><string>负向缩放</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QRadioButton" name="simpleEdit_symTransform">
+       <property name="toolTip">
+        <string>当启用对称和“对称变换”时，对称元素也会被变换。</string>
+       </property>
+       <property name="text"><string>对称变换</string></property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="simpleEdit_symSelect">
+       <property name="toolTip">
+        <string>当启用对称和“对称选择”时，每次选择改变都会选中对称元素。</string>
+       </property>
+       <property name="text"><string>对称选择</string></property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QCheckBox" name="simpleEdit_softSelect">
+       <property name="toolTip">
+        <string>启用软选择变换模式。</string>
+       </property>
+       <property name="text"><string>软选择</string></property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="simpleEdit_excludeSym">
+       <property name="toolTip">
+        <string>若勾选此选项，使用软选择功能时，落在对称平面另一侧的元素不会受到影响，即使它们可能位于软选择半径内。这可防止软选择功能意外编辑对称元素。</string>
+       </property>
+       <property name="text"><string>排除对称</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text"><string>软选择半径</string></property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="simpleEdit_softSize">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string notr="true">拖动此滑块以设置软选择的衰减半径。</string>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="value">
+        <number>500</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="linkWith" stdset="0">
+        <string>simpleEdit_softSize_spin</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="simpleEdit_softSize_spin">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>拖动此滑块设置软选择的衰减半径。</string>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="value">
+        <number>500</number>
+       </property>
+       <property name="linkWith" stdset="0">
+        <string>simpleEdit_softSize</string>
+       </property>
+       <property name="slave" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="text"><string>框选</string></property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>2</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="simpleEdit_selectModeRectangle">
+         <property name="toolTip">
+          <string>将选框选择模式设置为矩形。</string>
+         </property>
+         <property name="text"><string>矩形</string></property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QRadioButton" name="simpleEdit_selectModeCircle">
+         <property name="toolTip">
+          <string>将选框选择模式设置为圆形。</string>
+         </property>
+         <property name="text"><string>圆形</string></property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QRadioButton" name="simpleEdit_selectModeLasso">
+         <property name="toolTip">
+          <string>将选框选择模式设置为套索。</string>
+         </property>
+         <property name="text"><string>套索</string></property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QRadioButton" name="simpleEdit_selectModeBrush">
+         <property name="toolTip">
+          <string>将选框选择模式设置为笔刷。</string>
+         </property>
+         <property name="text"><string>笔刷</string></property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_2</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text"><string>笔刷半径</string></property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="simpleEdit_brushSize">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>设置笔刷选框选择模式的半径。</string>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>200</number>
+       </property>
+       <property name="value">
+        <number>50</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="linkWith" stdset="0">
+        <string>simpleEdit_brushSize_spin</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="simpleEdit_brushSize_spin">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>设置笔刷选框选择模式的半径。</string>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>200</number>
+       </property>
+       <property name="value">
+        <number>50</number>
+       </property>
+       <property name="linkWith" stdset="0">
+        <string>simpleEdit_brushSize</string>
+       </property>
+       <property name="slave" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>17</width>
+       <height>5</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
